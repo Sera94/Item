@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #canvas{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"width="800"height="800">
+
+</canvas>
+</body>
+<script>
+    var ocanvas = document.getElementById("canvas");
+    var mycanvas = ocanvas.getContext("2d");
+    var heiArr = [60,90,150,130,170,190,125,175,155,165,155,145];
+    function line(startX,startY,endX,endY){
+        mycanvas.beginPath();
+        mycanvas.strokeStyle = "block";
+        mycanvas.moveTo(startX,startY)
+        mycanvas.lineTo(endX,endY)
+        mycanvas.closePath();
+        mycanvas.stroke();
+    }
+    //两条竖线
+    line(100,100,100,500);
+    line(750,100,750,500);
+
+
+
+    for(var i=0;i<11;i++){
+        mycanvas.font = "20px 宋体"
+        mycanvas.fillText(400-i*40,70,105+i*40)
+        //mycanvas.moveTo(100,100+(i*40))
+        //mycanvas.lineTo(750,100+(i*40))
+        //11条横线
+        line(100,100+(i*40),750,100+(i*40))
+    }
+    function Arc(oX,oY,r,a,b,c){
+        mycanvas.beginPath();
+        mycanvas.lineWidth = 3;
+        mycanvas.strokeStyle = "royalblue";
+        mycanvas.arc(oX,oY,r,a,b,c)
+        mycanvas.closePath();
+        mycanvas.stroke();
+    }
+
+    function contact(startX,startY,endX,endY,fn){
+        mycanvas.beginPath();
+        mycanvas.lineWidth = 2;
+        //mycanvas.strokeStyle = "";
+        mycanvas.moveTo(startX,startY);
+        mycanvas.lineTo(endX,endY);
+        mycanvas.closePath();
+        mycanvas.stroke();
+
+    }
+
+    for(var i=0;i<12;i++){
+        var wid = 30;
+        var R = 10;
+        var hig = heiArr[i];
+        var hig1 = heiArr[i+1];
+        Arc(70+wid/2+(20+wid)*(i+1),(100+(400-hig)),10,0,Math.PI*2,false);
+        contact(70+wid/2+(20+wid)*(i+1),(100+(400-hig)),70+wid/2+(20+wid)*(i+2),(100+(400-hig1)))
+        console.log(70+wid/2+(20+wid)*(i+1)+":"+(100+(400-hig)))
+        mycanvas.font = "20px 宋体"
+        mycanvas.fillText((i+1)+'月',70+(20+wid)*(i+1),520)
+    }
+
+    /*setInterval(function(){
+     contact(135,440,185,410,function(){
+     contact(185,410,235,350,function(){
+     contact(235,350,285,370,function(){
+
+     })
+     })
+     })
+     },1000)*/
+
+</script>
+</html>
+

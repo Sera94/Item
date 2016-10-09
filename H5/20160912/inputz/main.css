@@ -1,0 +1,73 @@
+a{
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+form{
+    width: 600px;
+    height: auto;
+}
+div:not(:last-of-type){
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #cacaca;
+    margin: 40px auto;
+}
+div:not(:last-of-type)>span{
+    float: left;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+div:not(:last-of-type)>input{
+    float: left;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    width: 290px;
+    height: 100%;
+}
+div:not(:last-of-type)>p{
+    position: absolute;
+    bottom: -40px;
+    right:0;
+}
+#checkStr,
+#checkPhoneNum
+{width:190px;}
+
+#checkStr+a,
+#checkPhoneNum+a{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+#check{
+    /*margin: 0 20px;*/
+}
+div:last-of-type{
+    width: 300px;
+    margin: 0 auto;
+}
+button{
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 20px auto;
+    width: 400px;
+    height: 50px;
+    background-color: #ed2222;
+    color:#fff;
+    font-size:30px;
+}
+#checkStr+a{
+    background: #000;
+    color:#fff;
+    font-size: 24px;
+    letter-spacing: 2px;
+}

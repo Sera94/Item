@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html><title>我要这铁棒有何用</title>
+<body text="#990000">
+<canvas id="myCanvas" height=500 width=300></canvas>
+<script type="text/javascript">
+
+    var canvas=document.getElementById('myCanvas');
+    canvas.style.background = "#6495ED";
+    var ctx=canvas.getContext('2d');
+
+    var j1x=0,j1y=0,j1h=0,j1w=60;
+    var j2x=0,j2y=0,j2h=0,j2w=0;
+    var j3x=0,j3y=0,j3h=0,j3w=0;
+    var playx=40,playy=330,fengshu=0;
+    var gunzic=0,gunzix=60,gunziy=350;
+
+    window.addEventListener('keydown', doEnterDown, true);
+    window.addEventListener('keydown',doSpaceDown,true);
+    window.addEventListener('keyup', doKeyUp, true);
+    start();
+
+    function doEnterDown(e){
+        var keyID = e.keyCode ? e.keyCode :e.which;
+//        keyCode=13是enter键  按enter键开始
+        if (keyID === 13){
+            start();
+            window.addEventListener('keydown',doSpaceDown,true);
+            window.addEventListener('keyup', doKeyUp, true);
+        }
+    }
+
+    function doSpaceDown(e) {
+        var keyID = e.keyCode ? e.keyCode :e.which;
+//        空格键
+        if(keyID === 32 ) {
+            ctx.strokeStyle='yellow';
+            ctx.fillStyle='yellow';
+            ctx.lineWidth=3;
+            ctx.lineTo(gunzix,gunziy);
+            ctx.stroke();
+            ctx.moveTo(playx+20,playy+20);
+            gunziy=gunziy-5;
+            gunzic=350-gunziy;
+        }
+    }
+
+    function doKeyUp(e){
+        var keyID = e.keyCode ? e.keyCode :e.which;
+        if(keyID === 32 ) {
+            window.removeEventListener('keydown',doSpaceDown,true);
+            window.removeEventListener('keyup',doKeyUp,true);
+            gunziy=350;
+            ctx.fillStyle='black';
+            ctx.strokeStyle='yellow';
+            ctx.lineWidth=3;
+            var deg =Math.PI;
+            var id = setInterval(function () {
+                deg+=0.01*Math.PI;
+                ctx.clearRect(playx+18,gunziy-gunzic,gunzic+2,gunzic);
+                ctx.save();
+                ctx.beginPath();
+                ctx.translate(playx+20,gunziy);
+                ctx.rotate(deg);
+                ctx.moveTo(0,0);
+                ctx.lineTo(0,gunzic);
+                ctx.stroke();
+                ctx.restore();
+
+                if (deg>1.49*Math.PI) {
+                    clearInterval(id);
+                    ctx.beginPath();
+                    ctx.fillStyle='#6495ED';
+                    ctx.strokeStyle='#6495ED';
+                    ctx.lineWidth=4;
+                    ctx.moveTo(playx+20,playy+20);
+                    ctx.lineTo(playx+20,350-gunzic);
+                    ctx.stroke();
+                    moveplayer();
+                }
+            },10)
+        }
+    }
+
+    function start(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+//        第一个矩形的x/y轴  宽、高
+//        后面的随机生成，开始是不存在的0,0,0,0，后面加随机产生的数
+        j1x=0,j1y=0,j1h=0,j1w=60;
+        j2x=0,j2y=0,j2h=0,j2w=0;
+        j3x=0,j3y=0,j3h=0,j3w=0;
+//        红色矩形左上角坐标
+        playx=40,playy=330,fengshu=0;
+        gunzic=0,gunzix=60,gunziy=350;
+        ctx.fillStyle='black';
+        ctx.fillRect(j1x,350,j1w,150);
+        j2x=Math.floor(Math.random()*160+20)+j1x+j1w;
+        j2w=Math.floor(Math.random()*50+20);
+        ctx.fillRect(j2x,350,j2w,150);
+        j3x=Math.floor(Math.random()*160+20)+j2x+j2w;
+        j3w=Math.floor(Math.random()*50+20);
+        ctx.fillRect(j3x,350,j3w,150);
+
+        ctx.fillStyle='red';
+        ctx.fillRect(playx-2,playy,20,20);
+        huafengshu();
+    }
+
+
+    function moveplayer(){
+        ctx.beginPath();
+        ctx.fillStyle='#6495ED';
+        ctx.strokeStyle='#6495ED';
+        ctx.fillRect(playx-3,playy,20,20);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.fillStyle='red';
+        ctx.strokeStyle='red';
+        playx=playx+5;
+        ctx.fillRect(playx,playy,20,20);
+        ctx.stroke();
+        if(playx<=(gunzic+j1w-20)){
+            setTimeout("moveplayer();",30);
+        }
+        else{
+            if((j1w+gunzic)>j2x && j1w+gunzic<(j2x+j2w)){
+                ctx.beginPath();
+                ctx.fillStyle='#6495ED';
+                ctx.strokeStyle='#6495ED';
+                ctx.fillRect(playx,playy,20,20);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.fillStyle='red';
+                ctx.strokeStyle='red';
+                playx=j2x+j2w-20;
+                ctx.fillRect(playx,playy,20,20);
+                ctx.stroke();
+                moveall();
+                fengshu++;
+            }
+            else{
+                setTimeout(function () {
+                    gameover();
+                },200);
+            }
+
+        }
+    }
+    function moveall(){
+        ctx.fillStyle='#6495ED';
+        ctx.fillRect(0,0,300,500);
+        ctx.fillStyle='black';
+        j1x--;
+        j2x--;
+        j3x--;
+        playx--;
+        ctx.fillRect(j1x,350,j1w,150);
+        ctx.fillRect(j2x,350,j2w,150);
+        ctx.fillRect(j3x,350,j3w,150);
+        ctx.fillStyle='red';
+        ctx.fillRect(playx-3,playy,20,20);
+        huafengshu();
+        if(j2x!=0){
+            setTimeout("moveall();",3);
+        }
+        else{
+            rectchange();
+        };
+    }
+
+    function gameover(){
+        window.removeEventListener('keydown',doSpaceDown,true);
+        window.removeEventListener('keyup',doKeyUp,true);
+        ctx.fillStyle='#6495ED';
+        ctx.fillRect(0,0,300,500);
+        ctx.fillStyle='white';
+        ctx.font = "40pt Calibri";
+        ctx.fillText("Point:"+fengshu,60,300);
+        ctx.fillStyle='red';
+        ctx.font = "30pt Calibri";
+        ctx.fillText("GAME OVER",40,200);
+        ctx.font = "20pt Calibri";
+        ctx.fillText("press Enter to play",40,400);
+    }
+
+    function rectchange(){
+        j1x=j2x;
+        j1w=j2w;
+        j2x=j3x;
+        j2w=j3w;
+        j3x=Math.floor(Math.random()*160+20)+j2x+j2w;
+        j3w=Math.floor(Math.random()*50+20);
+        gunzix=j1w;
+        window.addEventListener('keydown',doSpaceDown,true);
+        window.addEventListener('keyup', doKeyUp, true);
+    }
+
+    function huafengshu(){
+        ctx.fillStyle='white';
+        ctx.font = "40pt 宋体";
+        ctx.fillText(fengshu,140,40);
+    }
+
+</script>
+
+
+</body>
+</html>

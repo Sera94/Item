@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+
+<body>
+<canvas id="myCanvas" height=500 width=300>
+    当前浏览器不支持
+</canvas>
+
+<script type="text/javascript">
+
+    var mycanvas = document.getElementById('myCanvas');
+    var otex = mycanvas.getContext('2d');
+
+    var j1x = 0, j1y = 0, j1h = 0, j1w = 60;
+    var j2x = 0, j2y = 0, j2h = 0, j2w = 0;
+    var j3x = 0, j3y = 0, j3h = 0, j3w = 0;
+    var gunzic = 0, gunzix = 60, gunziy = 330;
+    var playx = 40, playy = 330, fengshu = 0;
+
+    window.addEventListener('keydown', doKeyDown, false);
+    window.addEventListener('keyup', doKeyUp, false);
+
+    function start() {
+        j1x = 0, j1y = 0, j1h = 0, j1w = 60;
+        j2x = 0, j2y = 0, j2h = 0, j2w = 0;
+        j3x = 0, j3y = 0, j3h = 0, j3w = 0;
+        playx = 40, playy = 330, fengshu = 0;
+        gunzic = 0, gunzix = 60, gunziy = 350;
+
+//        外边框
+        otex.fillStyle = '#abcdef';
+        otex.fillRect(0, 0, 300, 500);
+
+//        开始时出现的三个边框
+        otex.fillStyle = 'black';
+        otex.fillRect(j1x, 350, j1w, 150);
+        j2x = Math.floor(Math.random() * 160 + 20) + j1x + j1w;
+        j2w = Math.floor(Math.random() * 50 + 20);
+        otex.fillRect(j2x, 350, j2w, 150);
+        j3x = Math.floor(Math.random() * 160 + 20) + j2x + j2w;
+        j3w = Math.floor(Math.random() * 50 + 20);
+        otex.fillRect(j3x, 350, j3w, 150);
+        otex.fillStyle = 'red';
+        otex.fillRect(playx, playy, 20, 20);
+        huafengshu();
+    }
+
+    function doKeyDown(e) {
+//        兼容问题
+        var keycod = e.keyCode ? e.keyCode : e.which;
+        if (keycod === 32) {
+            //棍子伸长速度
+            gunziy = gunziy - 5;
+            gunzic = 350 - gunziy;
+            otex.strokeStyle = 'yellow';
+            otex.lineWidth = 3;
+            otex.moveTo(playx + 20, playy + 20);
+            otex.lineTo(gunzix, gunziy);
+            otex.stroke();
+        } else if (keycod === 13) {
+            start();
+        }
+
+    }
+
+    function doKeyUp(e) {
+        var keycod = e.keyCode ? e.keyCode : e.which;
+        if (keycod === 32) {
+            gunziy = 350;
+
+//          离开键盘时棍子的动作  改成旋转
+            otex.beginPath();
+            otex.fillStyle = 'black';
+            otex.strokeStyle = 'black';
+            otex.lineWidth = 3;
+            otex.moveTo(playx + 20, playy + 20);
+            otex.lineTo(playx + 20 + gunzic, gunziy);
+            otex.stroke();
+
+            otex.beginPath();
+            otex.fillStyle = '#abcdef';
+            otex.strokeStyle = '#abcdef';
+            otex.lineWidth = 4;
+            otex.moveTo(playx + 20, playy + 20);
+            otex.lineTo(playx + 20, 350 - gunzic);
+            otex.stroke();
+            moveplay();
+        }
+
+    }
+
+//    function drawRotate(angle,id) {
+//        otex.clearRect(j1x+j1w-10,350-gunzic,gunzic+10,gunzic);
+//        otex.save();
+//        otex.beginPath();
+//        otex.strokeStyle="black";
+//        otex.translate(j1x+j1w,350);
+//        otex.rotate(angle*Math.PI/180);
+//        otex.moveTo(0,0);
+//        otex.lineTo(0,350-gunzic-playy-20);
+//        otex.closePath();
+//        otex.stroke();
+//        otex.restore();
+//        if(angle>=90){
+//            clearInterval(id);
+//        }
+//
+//    }
+
+    function moveplay() {
+        otex.beginPath();
+        otex.fillStyle = '#abcdef';
+        otex.strokeStyle = '#abcdef';
+        otex.fillRect(playx, playy, 20, 20);
+        otex.stroke();
+
+        otex.beginPath();
+        otex.fillStyle = 'red';
+        otex.strokeStyle = 'red';
+//        改变红色矩形速度
+        playx = playx + 5;
+        otex.fillRect(playx, playy, 20, 20);
+        otex.stroke();
+
+        if (playx <= (gunzic + j1w - 20)) {
+            setTimeout("moveplay();", 30);
+        }
+        else {
+            if (j1w + gunzic < (j2x + j2w) && (j1w + gunzic) > j2x) {
+                otex.beginPath();
+                otex.fillStyle = '#abcdef';
+                otex.strokeStyle = '#abcdef';
+                otex.fillRect(playx, playy, 20, 20);
+                otex.stroke();
+
+                otex.beginPath();
+                otex.fillStyle = 'red';
+                otex.strokeStyle = 'red';
+                playx = j2x + j2w - 20;
+                otex.fillRect(playx, playy, 20, 20);
+                otex.stroke();
+                moveall();
+                fengshu++;
+
+            }
+            else {
+                setTimeout(" gameover();", 200);
+            }
+
+        }
+    }
+    function moveall() {
+        otex.fillStyle = '#abcdef';
+        otex.fillRect(0, 0, 300, 500);
+        otex.fillStyle = 'black';
+        j1x--;
+        j2x--;
+        j3x--;
+        playx--;
+        otex.fillRect(j1x, 350, j1w, 150);
+        otex.fillRect(j2x, 350, j2w, 150);
+        otex.fillRect(j3x, 350, j3w, 150);
+        otex.fillStyle = 'red';
+        otex.fillRect(playx, playy, 20, 20);
+        huafengshu();
+        if (j2x != 0) {
+//            全部往左移的速度
+            setTimeout("moveall();", 3);
+        }
+        else {
+            change();
+        }
+
+    }
+
+    function change() {
+        j1x = j2x;
+        j1w = j2w;
+        j2x = j3x;
+        j2w = j3w;
+        j3x = Math.floor(Math.random() * 160 + 20) + j2x + j2w;
+        j3w = Math.floor(Math.random() * 50 + 20);
+        gunzix = j1w;
+    }
+
+    function huafengshu() {
+        otex.fillStyle = '#fff';
+        otex.font = "60px 宋体";
+        otex.fillText(fengshu, 130, 50);
+    }
+
+    start();
+
+    function gameover() {
+        otex.fillStyle = '#abcdef';
+        otex.fillRect(0, 0, 300, 500);
+        otex.fillStyle = '#fff';
+        otex.font = "50px 宋体";
+        otex.fillText("Point:" + fengshu, 54, 300);
+        otex.fillStyle = 'red';
+        otex.font = "50px 宋体";
+        otex.fillText("GAME OVER", 36, 180);
+        otex.font = "24px 宋体";
+        otex.fillText("press Enter to play", 36, 400);
+
+
+
+    }
+
+
+</script>
+
+
+</body>
+</html>

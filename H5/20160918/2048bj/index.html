@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*function xxx(a,b){
+			if(a>b){
+				document.write("haha");
+				
+			}else if(a=b){
+				document.write("yeye");
+				
+			}else{
+				document.write("bb");
+				
+			}
+		}
+		xxx(5,5);*/
+		
+		
+		/*function xxx(a,b){
+			if(a>b){
+				console.log("找"+(b-a)+"元");
+			}else{
+				console.log("找"+(b-a)+"元");
+			}
+		}
+		xxx(2,4);*/
+			/*alert(a);
+			prompt(a);*/
+		
+		
+		var a=prompt("请输入单价");
+		var b=prompt("请输入数量");
+		var d=prompt("收款金额");
+		/*document.write(a*b);*/
+		function xxx(c,d){
+			if(c>500){
+				if(d>c*0.8){
+					document.write("应收："+c*0.8+"找零："+(d-c*0.8));
+				}else if(d<c*0.8){
+					document.write("应收："+c*0.8+"还差："+(c*0.8-d));
+				}else{
+					document.write("应收："+c*0.8);
+				}
+			}	
+			else if(c<500){
+				if(d>c){
+					document.write("应收："+c+"找零："+(d-c));
+				}else if(d<c){
+					document.write("应收："+c+"还差："+(c-d));
+				}else{
+					document.write("应收："+c);
+			}
+				
+			
+		}	
+		xxx(a*b,d);
+		
+		
+		/*var arr = [1,2,3,4];
+		console.log(arr);*/
+		/*console.log(arr.length);*/
+		/*var a=b=c=[1,2,4];
+		console.log(b);
+		var b=[8];
+		console.log(a);
+		var e=f=[1,3,5];
+		console.log(f);
+		f.push(7);
+		console.log(e);
+		console.log(f.length-1);*/
+		
+		
+		/*var arr = [1,2,3,4,2,6,2,2];
+		for(var i=0; i<6;i++){
+			console.log("共有"+?+"2");
+		}*/
+		
+		/*var arr = [1,2,3,4,2,6,2,2,2];
+		var n=0;
+		for(var i=0; i<10; i++){*/
+			/*n++即n=n+1*/
+			/*if(arr[i]==2){n++;}
+		}
+		document.write("共有"+n+"个2");*/
+		
+		
+		/*var arr = [
+		 			[1,2,2,4],
+		 			[1,2,2,4],
+		 			[1,2,2,4],
+		 			[1,2,2,4]
+		]
+		var n=0;
+		for(var i=0; i<arr.length; i++){
+			for(var m=0; m<arr.length; m++){
+				if(arr[i][m]==2){n++;}
+			}
+			
+		}
+		document.write("共有"+n+"个2");*/
+		
+		
+/*定时器*/
+		/*setInterval(function(){
+			document.write("12345"+"<br>");
+		},1000);
+		*/
+		</script>
+	</body>
+</html>
