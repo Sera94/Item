@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>index</title>
+    <style>
+        a {
+            font-size: 30px;
+            font-weight: 900;
+        }
+    </style>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+<body>
+
+<!--get方法是通过已知的索引在合集中找到对应的元素。相反 ;index, 已知元素在合集中找到对应的索引
+
+.index()方法，从匹配的元素中搜索给定元素的索引值，从0开始计数-->
+
+
+<h2>index方法</h2>
+<ul>
+    <a></a>
+    <a></a>
+    <li id="test1">1</li>
+    <li id="test2">2</li>
+    <li id="test3">3</li>
+</ul>
+<ul>
+    <li id="test4">4</li>
+    <li id="test5">5</li>
+    <li id="test6">6</li>
+</ul>
+<select id="animation">
+    <option value="1">index无参数</option>
+    <option value="2">index传递dom或jQuery对象</option>
+    <option value="3">index参数是一个选择器</option>
+</select>
+<input id="exec" type="button" value="点击执行">
+<br />
+<br /> 索引结果：
+<span></span>
+<script type="text/javascript">
+    $("#exec").click(function() {
+        var v = $("#animation").val();
+
+        var $span = $("span");
+        $span.empty();
+
+        if (v == "1") {
+            //找到第一个li的同辈节点中的索引位置
+//            如果不传递任何参数给 .index() 方法，则返回值就是jQuery对象中第一个元素相对于它同辈元素的位置
+            $span.text($("li").index())
+        } else if (v == "2") {
+
+            //通过传递dom查找
+//         参数是一个DOM元素或jQuery对象， .index() 返回值就是传入的元素相对于原先集合的位置
+            $span.text($("li").index(document.getElementById("test5")));
+
+        } else if (v == "3") {
+            //
+//      如果参数是一个选择器， .index() 返回值就是原先元素相对于选择器匹配元素的位置。如果找不到匹配的元素，则 .index() 返回 -1
+            $span.text($("li").index($("#test8")));
+
+        }
+    });
+</script>
+</body>
+
+</html>

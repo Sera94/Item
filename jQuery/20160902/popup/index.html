@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jQueryMobile/jquery.js"></script>
+    <script src="jQueryMobile/jquery.mobile-1.4.5.js"></script>
+    <link href="jQueryMobile/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <a href="#showAlert" data-role="button" data-rel="popup">选择弹窗</a>
+    <div data-role="popup" id="showAlert" class="ui-content" data-dismissible="false"
+         data-position-to="#point" data-arrow="t">
+        <a href="#" data-rel="back" class="ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+        <button>前端</button>
+    </div>
+
+    <div style="width: 600px;height: 300px;background-color: yellow">
+        &nbsp&nbsp<p>你现在所学的内容是？</p>
+        &nbsp&nbsp<span id="point">A.前端</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <span>B.UI</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <span>c.后端</span>
+    </div>
+
+</body>
+</html>

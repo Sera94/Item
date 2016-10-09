@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jQueryMobile/jquery.js"></script>
+    <script src="jQueryMobile/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jQueryMobile/jquery.mobile-1.4.5.css" type="text/css">
+</head>
+<body>
+
+<!--首页-->
+<div data-role="page" id="home">
+
+    <!--头部-->
+    <div data-role="header" data-position="fixed">
+        <h1 data-icon="star">2572790646@qq.com</h1>
+    </div>
+
+    <!--内容-->
+    <div data-role="main" class="ui-content">
+
+        <!--表视图-->
+        <ul data-role="listview" class="ui-nodisc-icon ui-alt-icon">
+
+            <!--搜索框-->
+            <form class="ui-content">
+                <input type="search" placeholder="搜索">
+            </form>
+
+            <li><a href="#inbox"><img src="image/inbox.png" class="ui-li-icon">收件箱</a></li>
+            <li><a href="#starbox"><img src="image/star.png" class="ui-li-icon">星标邮件</a></li>
+
+            <li data-role="list-divider">应用</li>
+            <li><a href="#users"><img src="image/user.png" class="ui-li-icon">通讯录</a></li>
+            <li><a href="#"><img src="image/hk.png" class="ui-li-icon">贺卡</a></li>
+            <li><a href="#"><img src="image/grid.png" class="ui-li-icon">更多应用</a></li>
+
+            <li data-role="list-divider">文件夹</li>
+            <li><a href="#"><img src="image/group.png" class="ui-li-icon">群邮件</a></li>
+            <li><a href="#"><img src="image/cg.png" class="ui-li-icon">草稿箱</a></li>
+            <li><a href="#"><img src="image/sent.png" class="ui-li-icon">已发送</a></li>
+            <li><a href="#"><img src="image/delete.png" class="ui-li-icon">已删除</a></li>
+            <li><a href="#"><img src="image/rubbish.png" class="ui-li-icon">垃圾箱</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div data-role="page" id="inbox">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-role="button" data-rel="back" data-icon="carat-l ui-nodisc-icon ui-alt-icon">返回</a>
+        <h1>收件箱</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <form class="ui-content">
+            <input type="search" placeholder="搜索">
+        </form>
+        <a href="#inboxContent" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left">GitHub</a>
+        <a href="#" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left" data-transition="slide">麦田舞风</a>
+        <a href="#" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left" data-transition="slide">PostMaster</a>
+        <a href="#" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left" data-transition="slide">白公子</a>
+        <a href="#" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left" data-transition="slide">Corrine</a>
+        <a href="#" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left" data-transition="slide">TT</a>
+    </div>
+</div>
+
+<div data-role="page" id="inboxContent">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-role="button" data-rel="back" data-icon="carat-l ui-nodisc-icon ui-alt-icon">收件箱</a>
+        <h1></h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>[GitHub] A new public key was added to your account</h1>
+            <p>The following SSH key was added to your account:
+
+                GitHub Desktop - PC-20160301MSOM
+                5e:2d:a6:41:1c:d7:6f:2e:c5:d8:09:34:f0:2e:16:91
+
+                If you believe this key was added in error, you can remove the key and disable
+                access at the following location:
+
+            </p>
+        </div>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>[GitHub] Please verify your email address.</h1>
+            <p>Button not working? Paste the following link into your browser:
+                https://github.com/users/Sera94/emails/23993362/confirm_verification/e36b7908f0d80c872763dfb3eaafef3c2d141662
+
+                You’re receiving this email because you recently created a new GitHub account or added a new email address. If this wasn’t you, please ignore this email.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div data-role="page" id="starbox">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-role="button" data-rel="back" data-icon="carat-l ui-nodisc-icon ui-alt-icon">返回</a>
+        <h1>星际邮件</h1>
+    </div>
+    <div data-role="main">
+        <p>没有邮件</p>
+    </div>
+</div>
+
+<div data-role="page" id="users">
+    <div data-role="header" data-position="fixed">
+        <h1>通讯录</h1>
+        <a href="#" data-role="button" data-rel="back" data-icon="carat-l ui-nodisc-icon ui-alt-icon">返回</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <form class="ui-content">
+            <input type="search" placeholder="搜索" id="searchUsers">
+        </form>
+        <ul data-role="listview"  data-input="#searchUsers" data-filter="true" data-autodividers="true"  class="ui-nodisc-icon ui-alt-icon">
+            <li><a href="#"><img src="image/girl2.png" class="ui-li-icon" alt="">Ailee</a></li>
+            <li><a href="#"><img src="image/girl2.png" class="ui-li-icon" alt="">Amber</a></li>
+            <li><a href="#"><img src="image/girl2.png" class="ui-li-icon" alt="">Corrine</a></li>
+            <li><a href="#"><img src="image/girl2.png" class="ui-li-icon" alt="">Verna</a></li>
+            <li><a href="#"><img src="image/man.png" class="ui-li-icon" alt="">SUC</a></li>
+            <li><a href="#"><img src="image/girl.png" class="ui-li-icon" alt="">Sera</a></li>
+            <li><a href="#"><img src="image/man.png" class="ui-li-icon" alt="">TT</a></li>
+            <li><a href="#"><img src="image/girl.png" class="ui-li-icon" alt="">Jessica</a></li>
+            <li><a href="#"><img src="image/girl.png" class="ui-li-icon" alt="">Krystal</a></li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

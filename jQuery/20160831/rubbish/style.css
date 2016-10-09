@@ -1,0 +1,42 @@
+
+body{
+    margin: 0;
+}
+#container{
+    width: 600px;
+    height: 560px;
+    background-color: #dddddd;
+    overflow: hidden;
+}
+
+#rubbish-content{
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+}
+.rubbish{
+    width: 100px;
+    height: 100px;
+    background-color: #454545;
+    float: left;
+    margin-left:20px;
+    color: #ffffff;
+    line-height: 100px;
+    text-align: center;
+}
+
+#can-content{
+    width: 560px;
+    height: 200px;
+    margin-top: 160px;
+}
+.can{
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    float: left;
+    margin-left: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+
