@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*绕Y轴旋转360度，过度旋转*/
+#box {
+    width: 500px;
+    height: 500px;
+    margin: 200px auto;
+    position: relative;
+    /*接近90度有俯视的效果，但等于90度会消失*/
+    /*transform: rotateX(-88deg);*/
+    /*要看出旋转效果，需要有3D效果*/
+    transform-style: preserve-3d;
+    -webkit-animation: change 10s linear infinite;
+    transform-origin: 200px 150px;
+}
+
+@-webkit-keyframes change {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+#box div {
+    width: 400px;
+    height: 300px;
+    /*div浮动也没用，定位就可以全部挤在一起*/
+    position: absolute;
+}
+
+#box div img {
+    width: 400px;
+    height: 300px;
+}
+
+#box div:nth-child(1) {
+    transform: translateZ(346px);
+}
+
+div:nth-child(2) {
+    transform: rotateY(60deg) translateZ(346px);
+}
+
+div:nth-child(3) {
+    transform: rotateY(120deg) translateZ(346px);
+}
+
+div:nth-child(4) {
+    /*translateZ(300px)跟旋转有关，因为他已经旋转了180度，如果负的话，就是相当于往z轴正方向移动*/
+    transform: rotateY(180deg) translateZ(346px);
+}
+
+div:nth-child(5) {
+    transform: rotateY(240deg) translateZ(346px);
+}
+
+div:nth-child(6) {
+    transform: rotateY(300deg) translateZ(346px);
+}

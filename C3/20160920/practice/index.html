@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--动画效果  如果用animation：只有鼠标点击时的效果，鼠标移开就不起作用，会及时返回点击前的效果
+    所以用transform比较好，鼠标移开会以“同样”的方式消失-->
+
+    <style>
+        div{
+            float: left;
+        }
+        #box{
+            width: 1000px;
+            height: 1000px;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container1 img{
+            position: absolute;
+            left:-100px;
+            transition: all 1s linear;
+        }
+        .container1 img:hover{
+            transform: translate(-50px,0px);
+        }
+        .container2{
+            background: url("2.jpg") center;
+        }
+        .container2 p{
+            margin-left: 30px;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            background: #dddddd;
+            position: absolute;
+        }
+        .container2 .p1{
+            transition: 1s linear;
+            transform: translate(-150px,30px);
+        }
+        .container2 .p2{
+            transition: 2s linear;
+            transform: translate(-150px,60px);
+        }
+        .container2 .p3{
+            transition: 3s linear;
+            transform: translate(-150px,90px);
+        }
+        .container2:hover .p1{
+            transform: translate(0px,30px);
+        }
+        .container2:hover .p2{
+            transform: translate(0px,60px);
+        }
+        .container2:hover .p3{
+            transform: translate(0px,90px);
+        }
+        .container3{
+            background: url("3.jpg") center;
+        }
+        .content{
+            width: 300px;
+            height: 50px;
+            background: #fff;
+            position: absolute;
+            top: 300px;
+            transition: all 1s linear;
+        }
+        .content p {
+            font-size: 14px;
+            line-height: 4px;
+        }
+        .container3:hover .content{
+            transform: translate(0px,-50px);
+        }
+        .container4{
+            background: url("3.jpg") center;
+            position: relative;
+        }
+        .content2{
+            width: 500px;
+            height: 500px;
+            background: #fff;
+            position: absolute;
+            top: 300px;
+            transition: all 1s linear;
+            transform-origin: 0% 0%;
+        }
+        .content2 b{
+            position: absolute;
+            left: 150px;
+            transition: all 1s linear;
+            transform-origin: 0% 0%;
+        }
+        .container4:hover .content2{
+            transform: rotate(-20deg);
+
+        }
+        .container4:hover .content2 b{
+            transform: rotate(20deg);
+        }
+        .container5{
+            background: url("1.jpg") center;
+            position: relative;
+        }
+        .content3{
+            width: 220px;
+            height: 220px;
+            border: solid;
+            margin: -230px 0 0 36px;
+            position: absolute;
+            transition: all 2s linear;
+            transform-origin: -10% 110%;
+        }
+        .container5:hover .content3{
+            transform: rotate(90deg);
+        }
+        .container6{
+            background: url("2.jpg") center;
+            position: relative;
+        }
+        .content4{
+            color: #ffffff;
+            position: absolute;
+            top: 30px; left: 20px;
+        }
+        .container6 span{
+            display: block;
+            top: 70px; left: 30px;
+            width: 250px;
+            height: 50px;
+        }
+        .container6 h2,span{
+            position: absolute;
+            transition: all 2s linear;
+            /*刚开始字体绕着x轴90度及垂直于x轴，所以相对于屏幕消失
+            然后下面鼠标移入出现字，0度与x轴平行*/
+            transform: skewX(90deg);
+        }
+        .container6:hover h2{
+            transform: skewX(0deg);
+        }
+        .container6:hover span{
+            transform: skewX(0deg);
+        }
+        .container7{
+            position: relative;
+        }
+        .container7 img{
+            position: absolute;
+            left:-100px; top: -100px;
+            transition: all 1s linear;
+        }
+        .container7 img:hover{
+            transform: scale(0.8,0.8);
+            opacity: 0.6;
+        }
+        .container8{
+            background: url("3.jpg") center;
+            position: relative;
+        }
+        .t,.b,.l,.r{
+            width: 1px;
+            height: 1px;
+            background: #ffffff;
+            position: absolute;
+            transition: all 1s linear;
+            /*要使鼠标移入之前白线消失，可以用缩放0倍*/
+            transform: scale(0,0);
+        }
+        .t{top:40px;left: 150px;  }
+        .b{top:260px;left: 150px;  }
+        .l{top:150px;left: 40px;  }
+        .r{top:150px;left: 260px;  }
+        .container8:hover .t{
+            transform: scale(260,2);
+        }
+        .container8:hover .b{
+            transform: scale(260,2);
+        }
+        .container8:hover .l{
+            transform: scale(2,255);
+        }
+        .container8:hover .r{
+            transform: scale(2,255);
+        }
+        .container9{
+            background: url("1.jpg") center;
+            position: relative;
+            transition: all 1s linear;
+        }
+        .container9:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div class="container1 container">
+        <img src="1.jpg" />
+    </div>
+
+    <div class="container2 container">
+        <p class="p1">MONSTER</p>
+        <p class="p2">DANCING</p>
+        <p class="p3">LOTTO</p>
+    </div>
+
+    <div class="container3 container">
+        <div class="content">
+            <p>通过设置 X 轴的值来定义缩放转换。</p>
+            <p>通过设置 X 轴的值来定义缩放转换。</p>
+        </div>
+    </div>
+
+    <br/>
+    <div class="container4 container">
+        <div class="content2">
+            <b>monster && lotto</b>
+        </div>
+    </div>
+
+    <div class="container5 container">
+        <div class="content3"></div>
+    </div>
+
+    <div class="container6 container">
+        <div class="content4">
+            <h2>Monster</h2>
+            <span>通过设置 X 轴的值来缩放转换<br/>设置 X 轴的值来缩放转换。</span>
+        </div>
+    </div>
+
+    <div class="container7 container">
+        <!--<div class="content5"></div>-->
+        <img src="2.jpg">
+    </div>
+
+    <div class="container8 container">
+        <div class="content6">
+            <div class="t"></div>
+            <div class="b"></div>
+            <div class="l"></div>
+            <div class="r"></div>
+        </div>
+    </div>
+
+    <div class="container9 container">
+        <div class="content7"></div>
+    </div>
+</div>
+
+</body>
+</html>

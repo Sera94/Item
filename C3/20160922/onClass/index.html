@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <style>
+        /*<!--必须写在样式最下面-->*/
+        /*寻找的手机  and  寻找的范围
+        屏幕宽度在0~640之间红色，640~800之间蓝色*/
+        /*@media screen and (max-width: 640px){*/
+            /*body{background: red;}*/
+        /*}*/
+        /*@media screen and (min-width: 640px) and (max-width: 800px){*/
+            /*body{background: blue}*/
+        /*}*/
+
+
+        /*rem****************************************************************************************************!*/
+        /*html{*/
+            /*font-size: 20px;*/
+        /*}*/
+        /*div{*/
+            /*font-size: 40px;*/
+        /*}*/
+        /*!*em与父元素的字体作比较*!*/
+        /*span{*/
+            /*font-size: 2em;*/
+        /*}*/
+        /*!*rem与HTML的字体进行比较*!*/
+        /*p{*/
+            /*font-size: 2rem;*/
+        /*}*/
+
+
+        /*弹性盒子*************************************************************************************/
+
+        /*父元素设置为弹性盒*/
+        /**{*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
+        /*#box{*/
+            /*display: -webkit-box;*/
+            /*-webkit-box-orient: vertical;*/
+            /*width: 100%;*/
+            /*height: 600px;*/
+            /*background: #dddddd;*/
+            /*!*排列顺序：反序*!*/
+            /*-webkit-box-direction: reverse;*/
+        /*}*/
+        /*.div1{*/
+            /*background: red;*/
+            /*height: 60px;*/
+        /*}*/
+        /*.div2{*/
+            /*background: yellow;*/
+            /*-webkit-box-flex: 1;*/
+            /*display: -webkit-box;*/
+            /*!*垂直  滚动*!*/
+            /*overflow-y: scroll;*/
+            /*-webkit-box-orient: vertical;*/
+        /*}*/
+        /*.div3{*/
+            /*background: green;*/
+            /*height: 60px;*/
+        /*}*/
+        /*.box1{*/
+            /*height: 400px;*/
+            /*font-size: 30px;*/
+            /*-webkit-box-flex: 1;*/
+        /*}*/
+
+
+        /*怪异**********************************************************************************************/
+
+        div{width: 200px;height: 200px;}
+        /*<!--box-sizing: border-box;加这个padding不会撑大，即宽包含了padding和border值，所以div2会比1大
+            border+padding的值超过宽就会撑大-->*/
+        .div1{box-sizing: border-box;padding: 50px;border: 10px solid #000000;}
+        .div2{border: 10px solid #000000;}
+    </style>
+</head>
+<body>
+
+<!--<div>123-->
+    <!--<span>369</span>-->
+    <!--<p>333</p>-->
+<!--</div>-->
+
+<!--*弹盒***************************************************************************************************-->
+<!--<div id="box">-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div2">-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+        <!--<div class="box1">1</div>-->
+    <!--</div>-->
+    <!--<div class="div3"></div>-->
+<!--</div>-->
+
+<!--*怪异盒模型***************************************************************************************************-->
+<!--border+padding的值超过宽就会撑大-->
+<div class="div1">
+    123
+</div>
+<div class="div2">
+    123
+</div>
+<div>
+
+</div>
+</body>
+</html>

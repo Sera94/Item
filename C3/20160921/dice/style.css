@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+    width: 500px;
+    height: 500px;
+    margin: 200px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    /*transform: rotateX(-38deg) rotateY(39deg);*/
+    -webkit-animation: change 5s linear infinite;
+    transform-origin: 150px 150px;
+}
+@-webkit-keyframes change {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+#box div {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.8;
+    font-size: 200px;
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+}
+
+#box div:nth-child(1) {
+    background: red;
+    transform: translateZ(150px);
+}
+
+div:nth-child(2) {
+    background: yellow;
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+div:nth-child(3) {
+    background: green;
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+div:nth-child(4) {
+    background: blue;
+    transform: rotateY(270deg) translateZ(150px);
+}
+
+div:nth-child(5) {
+    background: violet;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+div:nth-child(6) {
+    background: black;
+    /*有个问题，写180度莫名位置不对？？？*/
+    transform: rotateX(270deg) translateZ(150px);
+}

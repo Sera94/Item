@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 50px;
+            height: 150px;
+            background: blue;
+            position: absolute;
+            top: 100px; left: 100px;
+            /*-webkit-animation: change 5s ease-in infinite alternate;*/
+
+            /*旋转角度 顺时针旋转正*/
+            /*transform: rotate(20deg);*/
+            /*改变旋转元素的基点位置  默认50%，50%*/
+            /*transform-origin: 60% 10%;*/
+
+            /*移动到x,y*/
+            /*transform: translate(40px, 300px);*/
+
+            /*宽，高各自变为原来的N倍*/
+            /*transform: scale(2, 4);*/
+
+            /*y轴向下偏  x轴向左偏*/
+            transform: skewX(30deg);
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="container"></div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p[align]{
+            color: blue;
+        }
+        p[content="lala"]{
+            color: yellow;
+        }
+        p[content~="hello"]{
+            background: yellow;
+        }
+        p[content^="l"]{
+            color: red;
+        }
+        p[content$="i"]{
+            background: blue;
+        }
+        p[content*="a"]{
+            font-size: 20px;
+        }
+        p[content|="yaya"]{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<p align="center">段落1</p>
+<p align="right">段落1</p>
+<p content="hello">段落1</p>
+<p content="hello world">段落1</p>
+<p content="lala">段落1</p>
+<p content="leilei">段落1</p>
+<p content="yayai">段落1</p>
+<p content="yaya-yeye">段落1</p>
+<p content="yaya">段落1</p>
+
+</body>
+</html>
