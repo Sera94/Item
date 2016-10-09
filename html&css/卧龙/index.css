@@ -1,0 +1,24 @@
+*{margin:0;padding:0;text-decoration:none;font: 12px/24px "Î¢ÈíÑÅºÚ","»ªÎÄÏ¸ºÚ",Arial,sans-serif;}
+#header{width:999px;height:100px;background:#fff;margin:0 auto;}
+#header a{float:left;margin:41px 0 0 19px;}
+#header a img{border:none;}
+.head_search{float:right;width:227px;height:26px;
+border:1px solid #e5e5e5;background:#f1f1f1;margin:39px 19px 0 0;}
+.head_search input{width:178px;height:100%;border:0;
+float:left;outline:none;padding-left:12px;color:#828282;background:#f1f1f1;}
+.head_search span{float:right;width:30px;height:100%;
+background:url(images/wolong_07.gif) no-repeat center;cursor:pointer;}
+#nav{width:969px;height:59px;background:#323232;margin:0 auto;padding-left:30px;}
+#nav a{float:left;height:59px;line-height:59px;color:#fff;
+padding:0 33px;border-right:1px solid #494949;font-size:12px;}
+#nav a:hover{background:#d4433e;}
+#banner{width:999px;height:463px;margin:0 auto;}
+#section{width:999px;height:240px;margin:0 auto;overflow:hidden}
+.section_left{width:480px;height:240px;padding-left:20px;float:left;background:#fff;}
+#section h3{font-size:20px;margin-top:37px;}
+.section_left ul{margin-top:20px;color:#c2c2c2;}
+.section_left ul li{overflow:hidden;line-height:24px;list-style-position:inside;width:450px;}
+.section_left ul li a{color:#464646;}
+.section_left ul li span{float:right;}
+.section_center{width:215px;height:100%;background:#f1f1f1;float:left;padding-left:25px;}
+.section_right{width:234px;padding-left:25px;float:left;}

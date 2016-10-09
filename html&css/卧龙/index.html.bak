@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>卧龙控股</title>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+ </head>
+ <body>
+	<div id="header">
+		<a href="#">
+			<img src="images/wolong_03.gif"/>
+		</a>
+		<div class="head_search">
+			<input placeholder="SEARCH..."/>
+			<span></span>
+		</div>
+	</div>
+	<div id="nav">
+		<a href="#">集团介绍</a>
+		<a href="#">产品中心</a>
+		<a href="#">卧龙市场</a>
+		<a href="#">技术研发</a>
+		<a href="#">国际合作</a>
+		<a href="#">投资者关系</a>
+		<a href="#">新闻资讯</a>
+		<a href="#" style="border:0;">人力资源</a>
+	</div>
+	<div id="banner">
+		<img src="images/wolong_06.gif"/>
+	</div>
+	<div id="section">
+		<div class="section_left">
+			<h3>新闻资讯</h3>
+			<ul>
+				<li>
+					<a href="#">陈建成董事长出席ABT年度销售会议</a>
+					<span>2013-7-30</span>
+				</li>
+				<li>
+					<a href="#">陈建成董事长出席ABT年度销售会议</a>
+					<span>2013-7-30</span>
+				</li>
+				<li>
+					<a href="#">陈建成董事长出席ABT年度销售会议</a>
+					<span>2013-7-30</span>
+				</li>
+				<li>
+					<a href="#">陈建成董事长出席ABT年度销售会议</a>
+					<span>2013-7-30</span>
+				</li>
+			</ul>
+		</div>
+		<div class="section_center">
+			<h3>卧龙介绍</h3>
+		</div>
+		<div class="section_right"></div>
+	</div>
+ </body>
+</html>

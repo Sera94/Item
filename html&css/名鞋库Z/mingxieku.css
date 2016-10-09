@@ -1,0 +1,349 @@
+*{margin:0;padding:0;border:0;text-decoration:none;list-style-type:none;outline:0;outline:0;font-family: Arial,Helvetica,sans-serif;}
+body{background-color:#f6f6f6;}
+
+/*--------------------------------------all------------------------------------------------*/
+#head1{width:100%;height:25px;border-bottom: 1px solid #e5e5e5;background-color: #eee;}
+#head2{width:100%;height:76px;margin:0 auto;background-color: #fff;}
+#nav{width:100%;height:34px;background-color: #a21f25;}
+#ad{width:100%;height:385px;background: url(images/tx2.jpg) no-repeat center center;cursor: pointer;overflow: hidden;}
+#logoall1{width:1190px;height:auto;margin:10px auto;}
+#in{width:1190px;height:290px;margin:0 auto;}
+#pro{width:1190px;height:auto;margin:0 auto;margin-top:20px;overflow: hidden;}
+#logoall2{width:1191px;height:390px;margin:0 auto;background-color: #fff;}
+#fotter1{width:100%;height:225px;border-top:2px solid #ce3c3b;border-bottom: 1px solid #e8e8e8;margin-top:20px;}
+#fotter2{width:100%;height:160px;background-color: #f8f8f8;overflow: hidden;}
+
+
+/*--------------------------------------head1------------------------------------------------*/
+#head1 ul{width:1190px;height:25px;margin:0 auto;display: block;overflow: hidden;}
+#head1 li{float:right;padding:0 15px;border-right:1px solid #d5d5d5;height:16px;width:auto;margin-top:4px;font-size:12px;line-height: 16px;}
+#head1 li div{width:124px;height:15px;background: url(images/default_icon_bg.png) no-repeat -316px -65px;}
+#head1 li a i{float:left;width:16px;height:16px;background: url(images/default_icon_bg.png) no-repeat -503px -43px;margin-right:5px;}
+#head1 li a b{float:right;width:7px;height:4px;background: url(images/un_footer20160610.png) no-repeat;margin-top:6px;margin-left:5px;}
+#head1 li a .phone{background: url(images/default_icon_bg.png) no-repeat -507px -12px;}
+#head1 li a{color:#666;}
+#head1 li a:hover{color:#f00;text-decoration: underline;}
+#head1 .or a{color:#ff6501;}
+
+/*--------------------------------------head2------------------------------------------------*/
+#head2 .box{width:1190px;height:76px;margin:0 auto;}
+#head2 .logo{width:421px;height:63px;margin-top:10px;background: url(images/default_icon_bg.png) no-repeat 0 -1px;float:left;}
+#head2 .help{width:650px;height:60px;padding-top:16px;float:right;}
+#head2 .search{width:345px;height:55px;float:left;}
+#head2 .shop{width:126px;height:34px;float:right;margin-top:6px;}
+#head2 .search .s_box{width:345px;height:30px;}
+#head2 .search .s_box input{width:270px;height:26px;float:left;border:2px solid #d5d5d5;border-right:0;text-indent: 5px;}
+#head2 .search .s_box button{cursor: pointer;width:65px;height:30px;float:left;background-color: #444444;color:#fff;font-family: microsoft yahei;font-size:16px;}
+#head2 .search p{font-family: Arial,Helvetica,sans-serif;font-size:12px;color:#ccc;line-height: 28px;}
+#head2 .search p a{color:#888;margin-right:6px;}
+#head2 .search p a:hover{color:#f00;text-decoration: underline;}
+#head2 .shop a{display:block;width:126px;height:34px;background: url(images/default_icon_bg.png) no-repeat 0 -64px;line-height: 34px;text-indent: 4em;font-size:12px;color:#666;}
+#head2 .shop a:hover{background: url(images/default_icon_bg.png) no-repeat 0 -98px;}
+#head2 .shop a b{color:#cc0000;padding:0 2px;}
+
+/*--------------------------------------nav------------------------------------------------*/
+#nav dl{width:1190px;height:34px;margin:0 auto;}
+#nav dl dd{float:left;padding:0 25px;height:16px;height:34px;line-height: 34px;}
+#nav dl dd a{color:#fff;}
+#nav dl .h:hover{background: none;background-color: #444444;}
+#nav dl .h:hover+dd{background: none;background-color: #a21f25;}
+#nav dl .first{border:0;padding:0;text-align: center;width:190px;background-color: #b9363d;}
+#nav dl .second{border:0;padding:0;text-align: center;width:80px;background-color: #444444;}
+#nav dl .bg{background: url(images/defaultnav_icon_bg.png) no-repeat 0 11px;}
+#nav dl .last{float:right;padding:0 10px;font-size:12px;height:14px;line-height: 14px;margin-top:10px;border-right:1px solid #d18f92;}
+#nav dl .lo a{color:#f6cc00;}
+#nav dl .last a:hover{color:#f6cc00;text-decoration: underline;}
+
+/*--------------------------------------ad------------------------------------------------*/
+#ad .box{width:1190px;height:385px;margin:0 auto;}
+#ad .box dl{width:190px;height:385px;float:left;background-color: #000;overflow: hidden;cursor:default;}
+#ad .box .two{width:150px;height:385px;float:right;background: url(images/ycxt.png) no-repeat; background-color: rgba(0,0,0,0.3);}
+#ad .box dl dd{width:100%;height:43px;position:relative;}
+#ad .box dl dd a{float:left;line-height: 43px;width:auto;height:43px;color:#fff;font-size:12px;text-indent: 1em;transition: transform 0.6s;}
+#ad .box dl dd a:hover{text-decoration: underline;}
+#ad .box dl dd a b{float:left;width:36px;height:43px;}
+#ad .box dl dd:hover{background-color: #a90000;}
+#ad .box dl dd i{float:right;line-height: 43px;font-size:12px;margin-right:10px;}
+#ad .box dl dd:hover i{color:#fff;}
+#ad .box dl dd:hover a{transform:translate(10px);transition: transform 0.6s;}
+
+#ad .box .two a{display:block;width:150px;height:193px;}
+#ad .box .two a:hover+a{background-color: rgba(0,0,0,0.5);}
+
+
+/*--------------------------------------logoall1------------------------------------------------*/
+#logoall1 .up{width:100%;height:32px;}
+#logoall1 .up p{display:block;height:24px;line-height: 24px;float:left;color:#000;font-size:12px;font-weight: 700;border-bottom: 2px solid #000;}
+#logoall1 .down{width:1190px;height:214px;background-color:#fff;}
+#logoall1 .down .left{float:left;border-collapse: collapse;background: url(images/bg.gif) no-repeat ;}
+#logoall1 .down .left td{border:1px solid #dfdfdf;width:140px;height:70px;}
+#logoall1 .down .left td a{display: block;width:140px;height:70px;}
+#logoall1 .down .left td a:hover{background-color: rgba(0,0,0,0.1);transition: background-color 1s;}
+#logoall1 .down .right{width:190px;height:214px;float:right;}
+#logoall1 .down .right .r1{width:172px;height:60px;padding:3px 8px;border:1px solid #f1f1f1;}
+#logoall1 .down .right .r1 li{background: url(images/dian.png) no-repeat 0 50%;font-size:12px;padding-left:10px;line-height:20px;overflow: hidden;color:}
+#logoall1 .down .right .r1 li a{color:#777;}
+#logoall1 .down .right .r1 li:nth-child(1) a{color:#f00;}
+#logoall1 .down .right .r1 li a:hover{color:#f00;text-decoration: underline;}
+#logoall1 .down .right .r2{width:190px;height:34px;}
+#logoall1 .down .right .r3{width:182px;height:104px;padding:3px;border:1px solid #eee;}
+
+
+/*--------------------------------------in------------------------------------------------*/
+#in a{float:left;width:230px;height:290px;margin-right:10px;position:relative;}
+#in a div{width:224px;height:284px;border:3px solid #fff;position:absolute;top:0;left:0;opacity:0;}
+#in a:hover div{opacity:1;transition: opacity 0.2s ;border-color: #f00;transition: border-color 1s;}
+
+/*--------------------------------------pro------------------------------------------------*/
+#pro .same{width:1196px;height:426px;margin-bottom:20px;}
+#pro .same .left{width:190px;height:426px;float:left;overflow: hidden;background-color: #fff;}
+#pro .same .mid{width:402px;height:426px;float:left;overflow: hidden;}
+#pro .same .right{width:auto;height:426px;float:right;overflow: hidden;border-collapse: collapse;margin-right:-1px;}
+
+
+#pro .same .left table{width:192px;height:auto;border-collapse: collapse;margin-left:-1px;}
+#pro .same .left table td{width:95px;height:39px;border:1px dashed #dddddd;}
+#pro .same .left table td a{display:block;width:95px;height:39px;color:#fff;line-height:39px;text-align: center;background-color: #333;font-size:14px;font-weight: 700;opacity: 0;}
+#pro .same .left table td a:hover{opacity: 1; transition: opacity 0.5s;}
+#pro .same .left dl dd{float:left;width:95px;line-height: 26px;}
+#pro .same .left dl dd a{font-size:13px;color:#3e3e3e;font-weight: 700;font-family: "microsoft yahei";margin-left:5px;}
+#pro .same .left dl dd a:hover{text-decoration: underline;}
+#pro .same .mid img{margin-left:9px;transition: margin-left 0.4s ;}
+#pro .same .mid:hover img{margin-left:1px;transition: margin-left 0.4s ;}
+
+#pro .same .right td{width:198px;height:244px;border-right:1px solid #d2d2d2;float:left;overflow: hidden;background-color: #fff;}
+#pro .same .right .tr2 td{height:181px;border-top:1px solid #d2d2d2;}
+#pro .same .right img{margin-left:5px;transition: margin-left 0.4s;}
+#pro .same .right td:hover a img{margin-left:0;transition: margin-left 0.4s;}
+
+
+#pro .f1 .left table{background: url(images/1f.gif) no-repeat;}
+#pro .f2 .left table{background: url(images/2f.gif) no-repeat;}
+#pro .f3 .left table{background: url(images/3f.gif) no-repeat;}
+#pro .f4 .left table{background: url(images/4f.gif) no-repeat;}
+#pro .f5 .left table{background: url(images/5f.gif) no-repeat;}
+#pro .f6 .left table{background: url(images/6f.gif) no-repeat;}
+#pro .f7 .left table{background: url(images/7f.gif) no-repeat;}
+#pro .f8 .left table{background: url(images/8f.gif) no-repeat;}
+
+
+/*--------------------------------------logoall2------------------------------------------------*/
+#logoall2 table{background: url(images/logoall2.gif) no-repeat; border-collapse: collapse;}
+#logoall2 table td{border:1px solid #dfdfdf;width:118px;height:70px;}
+#logoall2 table td a{display: block;width:100%;height:100%;transition: all 0.5s;}
+#logoall2 table td a:hover{background-color: rgba(0,0,0,0.2);transition: all 0.5s;}
+#logoall2 .hr{width:100%;height:36px;border-bottom:1px solid #ccc;margin-bottom:30px;position:relative;}
+#logoall2 .hr h3{padding:0 20px;font-weight: 100;font-family: microsoft yahei;font-size: 18px;position:absolute;left:45%;bottom:-9px;background-color: #fff;}
+#logoall2 .bot{width:148px;height:168px;float:left;overflow: hidden;}
+#logoall2 .bot p{text-align: center;font-size:14px;font-weight: 700;}
+#logoall2 .bot p a{color:#222;}
+#logoall2 .bot a:hover{text-decoration: underline;color:#ba0e17;}
+#logoall2 .bot a img{margin-left:34px;}
+#logoall2 .bot dl{border-right:1px dotted #ccc;height:68px;padding-left:16px;width:132px;font-size:12px;}
+#logoall2 .bot dl dd{float:left;width:62px;}
+#logoall2 .bot dl dd a{color:#555;}
+
+
+/*--------------------------------------fotter1------------------------------------------------*/
+#fotter1 .box{width:1160px;height:195px;margin:0 auto;padding:15px;}
+#fotter1 .box .img{width:230px;height:195px;float:left;border-right: 1px solid #dedede;float:left;}
+
+#fotter1 .box dl{width:870px;height:195px;padding-left:50px;border-left:1px solid #fff;float:left;}
+#fotter1 .box dl dd{float:left;width:217px;height:195px;}
+#fotter1 .box dl dd img{margin-bottom:30px;}
+#fotter1 .box dl dd h4{font-size: 14px;font-family: '宋体';margin-bottom:10px;}
+#fotter1 .box dl dd p a{color:#999;font-size:12px;}
+#fotter1 .box dl dd p a:hover{text-decoration: underline;color:#ba0e17;}
+
+/*--------------------------------------fotter2------------------------------------------------*/
+#fotter2 .box{width:1190px;height:140px;margin:0 auto;}
+#fotter2 .box p{text-align: center;font-size:12px;line-height: 30px;color:#777;}
+#fotter2 .box p a{color:#999;font-size:12px;}
+#fotter2 .box p i{padding:0 5px;}
+#fotter2 .box p a:hover{text-decoration: underline;color:#ba0e17;}
+#fotter2 .p1{margin-top:20px;}
+#fotter2 .p2 a{padding:0 5px;}
+#fotter2 .p3 a{margin:0 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

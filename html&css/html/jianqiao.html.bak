@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>上海建桥</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				text-decoration:none;
+			}
+			#headers{
+				width:1330px;
+				height:34px;
+				background:#e4e4e4;
+				margin:0 auto;
+				overflow:hidden;
+			}
+			.headers_left{
+				float:left;
+				margin:6px 0 0 150px;	
+			}
+			.headers_left a{
+				color:#797979;
+				padding-right:8px;
+				border-right:1px solid #fff;
+			}
+			.headers_right{
+				margin-left:300px;
+				float:left;
+			}
+			.headers_right a{
+				color:#797979;
+				padding-right:18px;
+			}
+			.headers_right input{
+				width:140px;
+				height:20px;
+				padding-left:6px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="headers">
+			<div class="headers_left">
+				<a href="#">在校学生</a>
+				<a href="#">教职员工</a>
+				<a href="#">校友</a>
+				<a href="#">未来学生</a>
+				<a href="#" style="border:none;">未来教职工</a>
+			</div>
+			<div class="headers_right">
+				<a href="#">繁体中文</a>
+				<a href="#">怀念旧版</a>
+				<a href="#" style="padding:none;">English</a>
+				<input placeholder="请输入关键字"/>
+				<img src="../images/images_03.gif"/>
+			</div>
+		</div>
+	</body>
+</html>
