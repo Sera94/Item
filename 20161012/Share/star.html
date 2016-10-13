@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="800"></canvas>
+
+<script>
+
+    /*
+     * 线条的属性 lineJoin 线条的连接  线条与线条相交时所呈现的形态
+     *
+     * miter (默认 呈现尖尖角)
+     *
+     * bevel （斜接）
+     *
+     * round （圆角）
+     * */
+
+    window.onload = function () {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        context.lineWidth = 10;
+//        线条顶端不会延伸而形成尖角
+//        context.lineJoin = "bevel";
+//        context.lineJoin = "round";
+        context.lineJoin = "miter";
+        context.miterLimit = 20;
+        drawStar(context, 30, 200, 400, 250, 0);
+    }
+
+    function drawStar(cxt, r, R, x, y) {
+
+        cxt.beginPath();
+        for (var i = 0; i < 5; i++) {
+            cxt.lineTo(Math.cos((18 + i * 72) / 180 * Math.PI) * R + x,
+                    -Math.sin((18 + i * 72) / 180 * Math.PI) * R + y);
+            cxt.lineTo(Math.cos((54 + i * 72) / 180 * Math.PI) * r + x,
+                    -Math.sin((54 + i * 72) / 180 * Math.PI) * r + y);
+        }
+        cxt.closePath();
+        cxt.stroke();
+    }
+</script>
+
+</body>
+</html>
