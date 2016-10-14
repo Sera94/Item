@@ -1,0 +1,8 @@
+<!--svg格式的图片-->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect style="fill:blue;stroke-width:5;stroke:pink;fill-opacity:0.3;stoke-opacity:0.7    "
+          x="20" y="20" rx="20" ry="20"
+          width="100"
+          height="100"></rect>
+</svg>
