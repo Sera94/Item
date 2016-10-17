@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+
+
+<div class="header">
+    <ul>
+        <li onclick="addItems(5)">1</li>
+        <li onclick="addItems(15)">2</li>
+        <li onclick="addItems(10)">3</li>
+        <li onclick="addItems(20)">4</li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+</div>
+
+<script>
+    function addItems(num) {
+        var items = document.getElementsByClassName("list");
+        if (items.length!=0){
+            document.querySelector(".content .center").removeChild(items[0]);
+        }
+
+        var content = document.createElement("ul");
+        content.className = "list";
+        for (var i=0;i<num;i++){
+            content.appendChild(document.createElement("li"));
+        }
+        document.querySelector(".content .center").appendChild(content);
+    }
+</script>
+</body>
+</html>
