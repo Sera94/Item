@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            /*1.设置父元素的display*/
+            /*设置弹性布局  p内容会横着排？*/
+            display: -webkit-box;
+
+            /*设置元素的流动方向 水平默认   垂直vertical*/
+            /*-webkit-box-orient: horizontal;*/
+
+            /*设置盒子的方向 盒子内容反转*/
+            /*-webkit-box-direction: reverse;*/
+
+            /*里面元素对齐的方式（左右）  start end center 平均justify  会根据屏幕大小移动*/
+            /*-webkit-box-pack: center;*/
+
+            /*以某个方向 为基准  把空白部分清除掉  上下*/
+            /*-webkit-box-align: stretch;*/
+        }
+        /*.container{*/
+            /*height: 100px;*/
+            /*background: red;*/
+        /*}*/
+        p{
+            width: 100px;
+            background: #1b7fdd;
+            border: 1px solid black;
+        }
+        p:nth-child(1){
+            /*使用浮点数分配伸缩项目（子元素）的比例*/
+            -webkit-box-flex: 1;
+            /*设置伸缩项目的显示位置*/
+            /*-webkit-box-ordinal-group:2;*/
+        }
+        p:nth-child(2){
+            -webkit-box-flex: 2;
+            /*-webkit-box-ordinal-group:1;*/
+        }
+        p:nth-child(3){
+            -webkit-box-flex: 2;
+            /*-webkit-box-ordinal-group:4;*/
+        }
+        p:nth-child(4){
+            -webkit-box-flex: 5;
+            /*-webkit-box-ordinal-group:3;*/
+        }
+        p:nth-child(5){
+            -webkit-box-flex: 5;
+            /*-webkit-box-ordinal-group:5;*/
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <!--<div class="container"><p>11111</p></div>-->
+    <!--<div class="container"><p>11111</p></div>-->
+    <!--<div class="container"><p>11111</p></div>-->
+    <!--<div class="container"><p>11111</p></div>-->
+    <p>11111</p>
+    <p>22222</p>
+    <p>33333</p>
+    <p>44444</p>
+    <p>55555</p>
+</div>
+
+</body>
+</html>

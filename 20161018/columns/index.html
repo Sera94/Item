@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .content {
+            /*设置多列的列数 自动根据可见窗口的宽度 去分配每一列的宽度*/
+            column-count: 3;
+
+            /*每一列的宽度  窗口放大缩小   如果比每一列宽度大的话 按照设置的列数去显示
+            比。。。小  每一列最小的宽度是设置的列的宽度
+            */
+            /*column-width: 200px;*/
+
+            /*设置列与列之间的空隙*/
+            /*column-gap: 50px;*/
+
+            /*设置分割线的样式 颜色 宽度*/
+            /*column-rule-style: ;*/
+            /*column-rule-color: ;*/
+            /*column-rule-width: ;*/
+
+            column-rule: dotted #abcdef 5px;
+
+            /*-moz-column-fill: auto;*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    介绍：当一行文字太长时，读者读起来就比较费劲，有可能读错行或读串行；人们的视点从文本的一端移到另一端、然后换到下一行的行首，如果眼球移动浮动过大，他们的注意力就会减退，容易读不下去，这时候咱们可以分成多列去显示
+    环境：在CSS3的多列布局(columns)语法功能出现之前，如果想让文本呈多列显示，要么手动给文本分段落，要么使用JS脚本等
+    列布局的浏览器完美兼容：
+    对于一些不支持多列布局特征的浏览器，比如IE9/IE8，会把这些属性全部忽略，这样布局就呈现出传统的单块布局
+    最好添加浏览器引擎前缀，谷歌浏览器的-webkit-，火狐浏览器的-moz-，IE浏览器的-ms-
+    多列(columns)的用法：
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*一般移动端导航栏高度64*/
+.header {
+    height: 64px;
+    border: 1px solid #06bf04;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header li {
+    width: 100px;
+    height: 40px;
+    margin: 12px 0;
+    border: 1px solid #00B7FF;
+}
+
+.content {
+    height: 600px;
+    border: 1px solid #c77405;
+}
+
+/*大屏设备*/
+@media (min-width: 1200px) {
+    /*让导航栏中的按钮居中排列*/
+    body {
+        background: #dddddd;
+    }
+
+    .header .ul1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .ul2 {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/*小屏 平板电脑*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background: #aa66cc;
+    }
+
+    .header .ul1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header .ul2 {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/*手机横屏 平板电脑竖屏*/
+@media (max-width: 767px) {
+    body {
+        background: #06bf04;
+    }
+
+    .header .ul1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header .ul2 {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/*手机竖屏*/
+@media (max-width: 480px) {
+    body {
+        background: #edcf72;
+    }
+
+    .header .ul1, .ul2 {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        width: 80px;
+        height: 40px;
+        margin: 12px 5px;
+        border: 1px solid #000000;
+        font-size: 18px;
+    }
+}

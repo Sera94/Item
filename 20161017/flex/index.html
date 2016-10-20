@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            display: flex;
+            /*行内元素*/
+            /*display: inline-flex;*/
+        }
+
+        p{
+            width: 100px;
+            background: #1b7fdd;
+            border: 1px solid black;
+        }
+        p:nth-child(1){
+
+            /*flex: 1;!*把所有元素 按指定的分数 去分配*!*/
+            /*flex-grow: 1;!*分配剩余空间，即2:2:2:6:6*!*/
+            flex-shrink: 1;
+        }
+        p:nth-child(2){
+            /*flex: 1;*/
+            /*flex-grow: 1;*/
+            flex-shrink: 1;
+        }
+        p:nth-child(3){
+            /*flex: 1;*/
+            /*flex-grow: 1;*/
+            flex-shrink: 1;
+        }
+        p:nth-child(4){
+            /*flex: 5;*/
+            /*flex-grow: 5;*/
+            flex-shrink: 3;
+        }
+        p:nth-child(5){
+            /*flex: 5;*/
+            /*flex-grow: 5;*/
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>11111</p>
+    <p>22222</p>
+    <p>33333</p>
+    <p>44444</p>
+    <p>55555</p>
+</div>
+
+</body>
+</html>
+
