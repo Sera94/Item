@@ -1,0 +1,275 @@
+[
+  {
+    "class": "国内新闻",
+    "data": [
+      {
+        "week": 0,
+        "data": [
+          {
+            "title": "气味",
+            "content": "不错"
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "data": [
+          {
+            "title": "你好",
+            "content": "很好"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "data": [
+          {
+            "title": "下雨",
+            "content": "阴天"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "data": [
+          {
+            "title": "111",
+            "content": "三四五"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "data": [
+          {
+            "title": "玉米",
+            "content": "柏树"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "data": [
+          {
+            "title": "天气",
+            "content": "白色"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "data": [
+          {
+            "title": "葫图",
+            "content": "呼噜"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "国际新闻",
+    "data": [
+      {
+        "week": 0,
+        "data": [
+          {
+            "title": "疯子",
+            "content": "呼呼"
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "data": [
+          {
+            "title": "颜色",
+            "content": "头头"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "娱乐新闻",
+    "data": [
+      {
+        "week": 0,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "科技新闻",
+    "data": [
+      {
+        "week": 0,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "data": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+]
+
