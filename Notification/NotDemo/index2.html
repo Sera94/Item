@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div {
+            width: 800px;
+            height: 800px;
+            background: #ABCDEF;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">活的不如ViVi~</div>
+
+<script>
+
+    var content = decodeURIComponent(location.search).replace("?","");
+    document.querySelector("#content").textContent = content;
+
+</script>
+</body>
+</html>
