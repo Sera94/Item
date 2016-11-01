@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>网页生成二维码</title>
+    <meta charset="utf-8"/>
+    <script src="js/qrcode.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #qrcode{
+            width: 96px;
+            height: 96px;
+            position: relative;
+            margin:50px auto;
+        }
+        button{
+            display: block;
+            width: 120px;
+            height: 45px;
+            background: #0cc;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 45px;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            outline: none;
+        }
+        .nav{
+            width: 100px;
+            height: 50px;
+            margin: auto;
+        }
+        .nav a{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            display: block;
+            float: left;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="http://www.5iweb.com.cn">网页特效库</a>
+
+</div>
+<h1>通过js代码实现网页生成二维码</h1>
+<div id="qrcode"></div>
+
+<button id="send">点击生成二维码</button>
+<div style="width: 100%; height: auto; line-height: 25px; text-align: center; position: absolute; bottom: 0px;">
+
+</div>
+
+<script>
+    window.onload =function(){
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 95,//设置宽高
+            height : 95
+        });
+        var navA=document.querySelector(".nav a");
+        var thisURL=navA.href;
+
+        document.getElementById("send").onclick =function(){
+            qrcode.makeCode(thisURL);
+        }
+    }
+</script>
+</body>
+</html>
