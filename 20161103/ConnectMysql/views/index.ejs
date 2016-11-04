@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <div>
+      <table border="1" id="users-list">
+        <thead>
+        <tr>
+          <th>用户id</th>
+          <th>用户名</th>
+          <th>年龄</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for(var i = 0;i < users.length;i++){
+          var user = users[i];
+        %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.user %></td>
+          <td><%= user.age %></td>
+          <td><a class="link-delete" href="/apis/delete?id=<%=user.id %>">删除</a></td>
+        </tr>
+        <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <form id="form-add">
+        <table>
+          <tr>
+            <td>用户名：</td>
+            <td><input type="text" required="required" name="user"></td>
+          </tr>
+          <tr>
+            <td>密码：</td>
+            <td><input type="password" required="required" name="pass"></td>
+          </tr>
+          <tr>
+            <td>年龄：</td>
+            <td><input type="number" required="required" name="age"></td>
+          </tr>
+        </table>
+        <input type="submit">
+      </form>
+    </div>
+
+  <script src="main.js"></script>
+  </body>
+</html>
