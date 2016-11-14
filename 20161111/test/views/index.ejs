@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+
+  <script src="/jquery.min.js"></script>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<div>
+  <table border="1" id="users">
+    <thead>
+    <tr>
+      <th>名字</th>
+      <th>日期</th>
+      <th>欠钱数额</th>
+      <th>是否还清</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i = 0;i < users.length;i++){
+      var user = users[i]; %>
+    <tr>
+      <form class="user-form">
+        <td><input name="user" type="text" value="<%= user.user %>" required="required"></td>
+        <td><input name="date" type="text" value="<%= user.date %>" required="required"></td>
+        <td><input name="number" type="number" value="<%= user.number %>" required="required"></td>
+        <td><input name="pay" type="text" value="<%= user.pay %>" required="required"></td>
+        <td>
+          <a class="delete" href="/apis/delete?id=<%= user.id %>"><input type="submit" value="删除"></a>
+
+        </td>
+      </form>
+    </tr>
+    <% } %>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <form id="form-input">
+    <table>
+      <tr>
+        <td>名字：</td>
+        <td><input type="text" required="required" name="user"></td>
+      </tr>
+      <tr>
+        <td>日期：</td>
+        <td><input type="date" required="required" name="date"></td>
+      </tr>
+      <tr>
+        <td>数额：</td>
+        <td><input type="number" required="required" name="number"></td>
+      </tr>
+      <tr>
+        <td>是否还清：</td>
+        <td><input type="text" required="required" name="pay"></td>
+      </tr>
+    </table>
+    <input type="submit" value="保存">
+  </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
