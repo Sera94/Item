@@ -1,0 +1,1 @@
+window.ucai=window.ucai||{},function(){function o(){}o.prototype.sayHello=function(){console.log("Hello Gulp 4")},ucai.Hello=o}(),function(){var o=new ucai.Hello;o.sayHello()}();
