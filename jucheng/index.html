@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚橙网</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="reset.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-3.1.0.js"></script>
+    <script src="unslider-min.js"></script>
+</head>
+<body>
+<div class="header">
+
+    <div class="header-login">
+        <div class="header-login-container clear-float">
+            <div class="header-login-left">文化青年，品质生活~</div>
+            <div class="header-login-right">
+                <ul>
+                    <li><a href="#">登录</a><span>|</span></li><li>
+                    <a href="#">注册</a><span>|</span></li><li>
+                    <a href="#">我的订单</a><span>|</span></li><li class="li-phone" id="li-phone">
+                    <a href="#">手机客户端</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header-container">
+        <div  id="header-location">
+            <div class="header-location-top">
+                <p>当前全国共有2571场演出，城市后数字代表演出场次</p>
+            </div>
+            <div class="header-location-li">
+                <ul>
+                    <li><span>全国范围</span><span class="line">|</span><a href="#">全国<span>(2571)</span></a></li>
+                    <li><span>韩国地区</span><span class="line">|</span><a href="#">首尔<span>(57)</span></a><a href="#">釜山<span>(44)</span></a></li>
+                    <li><span>西北地区</span><span class="line">|</span><a href="#">西安<span>(16)</span></a></li>
+                    <li><span>西南地区</span><span class="line">|</span><a href="#">重庆<span>(179)</span></a><a href="#">贵阳<span>(3)</span></a><a href="#">成都<span>(109)</span></a><a href="#">昆明<span>(15)</span></a></li>
+                    <li><span>华中地区</span><span class="line">|</span><a href="#">武汉<span>(87)</span></a><a href="#">郑州<span>(5)</span></a><a href="#">长沙<span>(55)</span></a></li>
+                    <li><span>华东地区</span><span class="line">|</span><a href="#">上海<span>(591)</span></a><a href="#">杭州<span>(177)</span></a><a href="#">南京<span>(98)</span></a><a href="#">福州<span>(74)</span></a><a href="#">无锡<span>(34)</span></a><a href="#">苏州<span>(23)</span></a></li>
+                    <li><span>华南地区</span><span class="line">|</span><a href="#">深圳<span>(347)</span></a><a href="#">广州<span>(527)</span></a><a href="#">港澳<span>(211)</span></a></li>
+                    <li class="borderNo"><span>华北地区</span><span class="line">|</span><a href="#">北京<span>(640)</span></a><a href="#">太原<span>(32)</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="header-singer">
+            <p>热门搜索：</p>
+            <div class="hot-singer">郝云</div>
+            <div class="hot-singer">陈奕迅</div>
+            <div class="hot-singer">KESHA</div>
+            <div class="hot-singer">陈粒</div>
+            <div class="hot-singer">莫奈</div>
+            <div class="hot-singer">林忆莲</div>
+            <div class="hot-singer">杭盖</div>
+            <div class="hot-singer">程璧</div>
+        </div>
+
+
+        <div class="header-logo">
+        <div id="phone-popup">
+            <img src="images/phone.png">
+        </div>
+        <div class="logo-img"></div>
+        <div class="logo-select" id="logo-select">
+            全国<img src="images/down.png" id="logo-select-img"/>
+        </div>
+    </div>
+
+        <div class="header-nav clear-float">
+        <div class="header-nav-left">
+            <ul>
+                <li class="nav-index"><a href="#">首页</a></li><li>
+                <a href="#">流行音乐</a></li><li>
+                <a href="#">古典音乐</a></li><li>
+                <a href="#">舞台剧</a></li><li>
+                <a href="#">儿童亲子</a><span>|</span></li><li>
+                <a href="#">聚特惠</a></li><li>
+                <a href="#">精彩专题</a></li><li>
+                <a href="#">欢乐年卡</a></li><li>
+                <a href="#">...</a></li>
+            </ul>
+        </div>
+        <div class="header-nav-right">
+            <input type="text" placeholder="请输出演出、艺人、场馆名称..." id="search-input"/>
+            <div class="header-search" id="header-search"><a href="#"></a></div>
+        </div>
+
+    </div>
+
+        <div class="slider">
+            <ul class="slider-main">
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/01img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/02img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/03img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/04img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/05img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/06img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/07img.jpg"></a>
+                </li>
+                <li class="slider-panel">
+                    <a href="#" target="_blank"><img  src="images/08img.jpg"></a>
+                </li>
+            </ul>
+            <div class="slider-extra">
+                <ul class="slider-nav">
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                    <li class="slider-item"></li>
+                </ul>
+                <div class="slider-page">
+                    <a class="slider-pre" href="javascript:;;"><</a>
+                    <a class="slider-next" href="javascript:;;">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="nationwide clear-float">
+        <div class="nationwide-left">
+            <div class="nationwide-left-title">
+                <span class="nationwide-span">全国</span><span class="other-span">[其他城市]</span>
+            </div>
+            <div class="other-cities" id="other-cities">
+                <p>热门城市:</p>
+                <div class="clear-float">
+                    <div class="hot-cities">全国</div>
+                    <div class="hot-cities">深圳</div>
+                    <div class="hot-cities">广州</div>
+                    <div class="hot-cities">北京</div>
+                    <div class="hot-cities">上海</div>
+                    <div class="hot-cities">成都</div>
+                    <div class="hot-cities">重庆</div>
+                    <div class="hot-cities">武汉</div>
+                    <div class="hot-cities">南京</div>
+                    <div class="hot-cities">杭州</div>
+                </div>
+                <div class="clear-float">
+                    <div class="all-cities">合肥<span>（7）</span></div>
+                    <div class="all-cities">沈阳<span>（4）</span></div>
+                    <div class="all-cities">济南<span>（5）</span></div>
+                    <div class="all-cities">常州<span>（1）</span></div>
+                    <div class="all-cities">东莞<span>（4）</span></div>
+                    <div class="all-cities">舟山<span>（2）</span></div>
+                    <div class="all-cities">潍坊<span>（3）</span></div>
+                    <div class="all-cities">长春<span>（7）</span></div>
+                    <div class="all-cities">温州<span>（4）</span></div>
+                    <div class="all-cities">嘉兴<span>（3）</span></div>
+                    <div class="all-cities">绍兴<span>（5）</span></div>
+                    <div class="all-cities">自贡<span>（1）</span></div>
+                    <div class="all-cities">汕头<span>（4）</span></div>
+                    <div class="all-cities">首尔<span>（23）</span></div>
+                    <div class="all-cities">宁波<span>（5）</span></div>
+                    <div class="all-cities">昆明<span>（9）</span></div>
+                    <div class="all-cities">无锡<span>（8）</span></div>
+                    <div class="all-cities">太原<span>（2）</span></div>
+                    <div class="all-cities">西安<span>（13）</span></div>
+                    <div class="all-cities">苏州<span>（8）</span></div>
+                    <div class="all-cities">福州<span>（24）</span></div>
+                    <div class="all-cities">贵阳<span>（2）</span></div>
+                    <div class="all-cities">杭州<span>（19）</span></div>
+                    <div class="all-cities">香港<span>（32）</span></div>
+                    <div class="all-cities">南昌<span>（7）</span></div>
+                    <div class="all-cities">南宁<span>（3）</span></div>
+                    <div class="all-cities">佛山<span>（5）</span></div>
+                    <div class="all-cities">中山<span>（13）</span></div>
+                    <div class="all-cities">大连<span>（8）</span></div>
+                    <div class="all-cities">兰州<span>（24）</span></div>
+                    <div class="all-cities">石家庄<span>（2）</span></div>
+                    <div class="all-cities">惠州<span>（19）</span></div>
+                    <div class="all-cities">银川<span>（32）</span></div>
+                    <div class="all-cities">连云港<span>（7）</span></div>
+                    <div class="all-cities">青岛<span>（3）</span></div>
+                    <div class="all-cities">天津<span>（5）</span></div>
+                    <div class="all-cities">澳门<span>（7）</span></div>
+                    <div class="all-cities">郑州<span>（3）</span></div>
+                    <div class="all-cities">厦门<span>（5）</span></div>
+
+                </div>
+            </div>
+            <div class="clear-float">
+                <div class="pop-music">
+                    <div class="pop-container" id="pop-img1">
+                    <img src="images/pop1.jpg" />
+                    <div class="pop-transparent" id="pop-tra1">
+                        <ul>
+                            <li class="pop-place"><a href="#">上海体育馆(上海大舞台)</a></li>
+                            <li class="pop-time"><a href="#">2016.10.04 19:30</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <p><a href="#">凯莎KESHA 2016年巡回演唱会-上海站</a></p>
+                    <p><span>流行音乐&nbsp; |</span><strong>￥299</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" id="pop-img2">
+                    <img src="images/pop2.jpg" />
+                    <div class="pop-transparent" id="pop-tra2">
+                        <ul>
+                            <li class="pop-place"><a href="#">湖北民院</a></li>
+                            <li class="pop-time"><a href="#">2016.09.18 19:30</a></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <p><a href="#">《You are Gonna Get Love》-Keren Ann 2016新...</a></p>
+                    <p><span>流行音乐&nbsp; |</span><strong>￥100</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  id="pop-img3">
+                        <img src="images/pop3.jpg"/>
+                        <div class="pop-transparent" id="pop-tra3">
+                            <ul>
+                                <li class="pop-place"><a href="#">东方艺术中心音乐会</a></li>
+                                <li class="pop-time"><a href="#">2016.09.18 19:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">【万有音乐系】杭盖乐队《花斑马》2016年新专辑巡回演唱会</a></p>
+                    <p><span>流行音乐&nbsp; |</span><strong>￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" id="pop-img4">
+                        <img src="images/pop4.jpg" />
+                        <div class="pop-transparent" id="pop-tra4">
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p><a href="#">五月天-Just Rock It 2016年就是演唱会-深圳站</a></p>
+                    <p><span>流行音乐&nbsp; |</span><strong>￥255</strong><span>起</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nationwide-right">
+            <div class="nationwide-right-title">专题推荐</div>
+            <div class="nationwide-right-div">
+                <img src="images/nationwide-right-img.png"/>
+                <p><a href="#">凯莎KESHA 2016巡回演唱会</a></p>
+            </div>
+            <div class="nationwide-right-div">
+                <ul>
+                    <li><a href="#">万有音乐系七夕-浪漫就要音乐范儿</a></li>
+                    <li><a href="#">百雀羚三生花 屈臣氏荣誉呈现程璧“我和小鸟和铃铛”2016...</a></li>
+                </ul>
+            </div>
+            <div class="nationwide-right-div clear-float">
+                <div>郝云</div>
+                <div>陈奕迅</div>
+                <div>KESHA</div>
+                <div>陈粒</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-performance clear-float">
+        <div class="performance-title">巡回演出</div>
+        <div class="performance-left">
+            <div class="performance-left-left">
+                <div class="performance-left-left-top performance-container">
+                    <img src="images/performance-img1.png"/>
+                    <div class="performance-transparent">
+                        <p><a href="#">【万有音乐系】《You are Gonna Get Love》-KESHA 2016巡回演出</a></p>
+                        <p class="timesP"><a href="#">共<span>9</span>场</a></p>
+                    </div>
+                </div>
+                <div class="performance-left-left-bottom performance-container">
+                    <img src="images/performance-img2.png"/>
+                    <div class="performance-transparent">
+                        <p><a href="#">【万有音乐系】陈粒“小梦大半”2016巡回演唱会</a></p>
+                        <p class="timesP"><a href="#">共<span>8</span>场</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="performance-left-right performance-container">
+                <img src="images/performance-img3.png"/>
+                <div class="performance-transparent">
+                    <p><a href="#">【万有音乐系】“我和小鸟和铃铛”程璧2016巡回演唱会</a></p>
+                    <p class="timesP"><a href="#">共<span>10</span>场</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="performance-center">
+            <div class="performance-center-top clear-float ">
+                <div class="performance-center-left performance-container">
+                    <img src="images/performance-img4.png"/>
+                    <div class="performance-transparent">
+                        <p><a href="#">[理]想[人]生-Resound乐队 2016巡回演唱会</a></p>
+                        <p class="timesP"><a href="#">共<span>3</span>场</a></p>
+                    </div>
+                </div>
+                <div class="performance-center-right performance-container">
+                    <img src="images/performance-img5.png">
+                    <div class="performance-transparent">
+                        <p><a href="#">【万有音乐系】心有花开-小娟与山谷里的邻居2016巡回演出</a></p>
+                        <p class="timesP"><a href="#">共<span>6</span>场</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="performance-center-bottom clear-float">
+                <div class="performance-center-left performance-container">
+                    <img src="images/performance-img6.png"/>
+                    <div class="performance-transparent">
+                        <p><a href="#">【万有音乐系】最佳拍档-海龟先生2016巡回演出</a></p>
+                        <p class="timesP"><a href="#">共<span>8</span>场</a></p>
+                    </div>
+                </div>
+                <div class="performance-center-right performance-container">
+                    <img src="images/performance-img7.png">
+                    <div class="performance-transparent">
+                        <p><a href="#">陈奕迅ANOTHER EASON'S LIFE演唱会</a></p>
+                        <p class="timesP"><a href="#">共<span>6</span>场</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="performance-right performance-container">
+            <img src="images/performance-img8.png"/>
+            <div class="performance-transparent">
+                <p><a href="#">【万有音乐系】杭盖乐队《花斑马》2016年巡回演唱会</a></p>
+                <p class="timesP"><a href="#">共<span>4</span>场</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-concert">
+        <div class="concert-container">
+            <div class="concert-title">
+                演唱会
+            </div>
+            <div class="concert-li">
+                <ul>
+                    <li><a href="#">陈奕迅</a><span>|</span></li>
+                    <li><a href="#">KESHA</a><span>|</span></li>
+                    <li><a href="#">陈粒</a><span>|</span></li>
+                    <li><a href="#">李荣浩</a><span>|</span></li>
+                    <li><a href="#">程璧</a><span>|</span></li>
+                    <li><a href="#">莫文蔚</a><span>|</span></li>
+                    <li><a href="#">Twins</a></li>
+
+                </ul>
+            </div>
+            <div class="clear-float ">
+                <div class="pop-music">
+                    <div class="pop-container">
+                        <img src="images/concert1.jpg" />
+                        <div class="pop-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">黄龙体育中心（体育馆）</a></li>
+                                <li class="pop-time"><a href="#">2016.10.18 19:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">莫文蔚2016看看世界巡回演唱会-杭州站</a></p>
+                    <p><span>杭州&nbsp; |</span><strong>￥280</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/pop1.jpg" />
+                        <div class="pop-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">上海体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.10.04 19:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p><a href="#">凯莎KESHA 2016年巡回演唱会-上海站</a></p>
+                    <p><span>上海&nbsp; |</span><strong>￥299</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  >
+                        <img src="images/concert3.jpg"/>
+                        <div class="pop-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">佛山市岭南体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.20 19:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">TWINS LOL世界巡回演唱会-佛山市</a></p>
+                    <p><span>佛山&nbsp; |</span><strong>￥380</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/concert4.jpg" />
+                        <div class="pop-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">李荣浩[有 理想]世界巡回演唱会-广州站</a></p>
+                    <p><span>广州&nbsp; |</span><strong>￥280</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/pop4.jpg" />
+                        <div class="pop-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">五月天-Just Rock It 2016年就是演唱会-深圳站</a></p>
+                    <p><span>深圳&nbsp; |</span><strong>￥255</strong><span>起</span></p>
+                </div>
+            </div>
+            <div class="clear-float">
+                <div class="carousel-left carousel-div random">
+                    <div class="random2">
+                        <div class="random2div">
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer3.png">
+                                    <p class="pp2"><a href="#">程璧</a> </p>
+                                    <p class="pp3">歌手 大陆</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>程璧 “我和小鸟和铃铛” 2016巡回演唱会</a></p>
+                                    <p class="pp5"><span>15</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>上海</p>
+                                        <p>2016.10.04</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>北京</p>
+                                        <p>2016.10.06</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.08</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer2.png">
+                                    <p class="pp2"><a href="#">陈粒</a> </p>
+                                    <p class="pp3">歌手 大陆</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>陈粒“小梦大半”2016巡回演唱会</a></p>
+                                    <p class="pp5"><span>15</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>武汉</p>
+                                        <p>2016.09.23</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>杭州</p>
+                                        <p>2016.09.28</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer1.png">
+                                    <p class="pp2"><a href="#">凯莎</a> </p>
+                                    <p class="pp3">歌手 欧美</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>凯莎2016巡回演唱会-上海站</a></p>
+                                    <p class="pp5"><span>3</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>上海</p>
+                                        <p>2016.10.04</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>北京</p>
+                                        <p>2016.10.06</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.08</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-right carousel-div">
+                    <p class="pp1">热门资讯</p>
+                    <div class="carousel-right-top clear-float">
+                        <div class="carousel-right-top-left">
+                            <img src="images/handsome.png"/>
+                        </div>
+                        <div class="carousel-right-top-right">
+                            <p class="pp2"><a href="#">[160906]朴puppy出动，萌到你腿软</a></p>
+                            <p class="pp6">6日下午，自夏威夷度假回来就是“隐身模式”的灿烈在INS上更新两则萌吐奶的小视频，向爱丽们报告近况</p>
+                        </div>
+                    </div>
+                    <div class="carousel-right-bottom">
+                        <ul>
+                            <li><a href="#">160906《道林.格雷》举行见面会，小太阳的音乐剧来了！</a></li>
+                            <li><a href="#">李佳霖新歌《天府之国》首播 才华寄托家乡</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="concert-more">
+                查看更多
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-rock">
+        <div class="concert-container">
+            <div class="concert-title">
+                民谣 & 摇滚
+            </div>
+            <div class="concert-li">
+                <ul>
+                    <li><a href="#">杭盖乐队</a><span>|</span></li>
+                    <li><a href="#">海龟先生</a><span>|</span></li>
+                    <li><a href="#">乌兰图雅</a><span>|</span></li>
+                    <li><a href="#">张楚</a><span>|</span></li>
+                    <li><a href="#">程璧</a><span>|</span></li>
+                    <li><a href="#">旅行团</a><span>|</span></li>
+                    <li><a href="#">陈粒</a><span>|</span></li>
+                    <li><a href="#">KerenAnn</a></li>
+                </ul>
+            </div>
+            <div class="clear-float ">
+                <div class="pop-music">
+                    <div class="pop-container">
+                        <img src="images/rock1.jpg" />
+                        <div class="pop-transparent rock-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">黄龙体育中心（体育馆）</a></li>
+                                <li class="pop-time"><a href="#">2016.10.18 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+
+                    </div>
+                    <p class="rock-p"><a href="#">"最佳拍档"海龟先生世界巡回演唱会-北京站</a></p>
+                    <p><span>北京&nbsp; |</span><strong class="rock-strong">￥100</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/rock2.jpg" />
+                        <div class="pop-transparent rock-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">上海体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.10.04 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+
+                    <p class="rock-p"><a href="#">【万有音乐系】“微小相见”张楚2016全国巡演-北京站</a></p>
+                    <p><span>北京&nbsp; |</span><strong class="rock-strong">￥280</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  >
+                        <img src="images/rock3.png"/>
+                        <div class="pop-transparent rock-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">佛山市岭南体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.20 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p class="rock-p"><a href="#">程璧“我和小鸟和铃铛”2016全国巡演-广州站</a></p>
+                    <p><span>广州&nbsp; |</span><strong class="rock-strong">￥180</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/pop3.jpg" />
+                        <div class="pop-transparent rock-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="rock-p"><a href="#">杭盖乐队《花斑马》2016世界巡回演唱会-上海站</a></p>
+                    <p><span>上海&nbsp; |</span><strong class="rock-strong">￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/rock4.jpg" />
+                        <div class="pop-transparent rock-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p class="rock-p"><a href="#">花开四季-“蒙古之花”乌兰图雅2016全国巡演-重庆站</a></p>
+                    <p><span>重庆&nbsp; |</span><strong class="rock-strong">￥100</strong><span>起</span></p>
+                </div>
+            </div>
+
+            <div class="clear-float">
+                <div class="carousel-left carousel-div carousel-div-rock">
+                    <div class="random1">
+                        <div class="random1div">
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer4.png">
+                                    <p class="pp2"><a href="#">小娟&山谷里的邻居</a> </p>
+                                    <p class="pp3">团体 大陆</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>心有花开-小娟和山谷里的邻居2016巡回演出</a></p>
+                                    <p class="pp5"><span>10</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>合肥</p>
+                                        <p>2016.09.21</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>北京</p>
+                                        <p>2016.10.06</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.08</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer5.png">
+                                    <p class="pp2"><a href="#">海龟先生乐队</a> </p>
+                                    <p class="pp3">歌手 大陆</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>最佳拍档 海龟先生2016全国巡演</a></p>
+                                    <p class="pp5"><span>10</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>武汉</p>
+                                        <p>2016.09.23</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>杭州</p>
+                                        <p>2016.09.28</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="random-div clear-float">
+                                <p class="pp1">热门明星</p>
+                                <div class="random-div-left">
+                                    <img src="images/singer6.png">
+                                    <p class="pp2"><a href="#"></a> </p>
+                                    <p class="pp3">歌手 欧美</p>
+                                </div>
+                                <div class="random-div-right clear-float">
+                                    <p class="pp4"><a>凯莎2016巡回演唱会-上海站</a></p>
+                                    <p class="pp5"><span>3</span>场演出[查看]</p>
+                                    <img src="images/circle.png"/>
+                                    <div class="placeT">
+                                        <p>上海</p>
+                                        <p>2016.10.04</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>北京</p>
+                                        <p>2016.10.06</p>
+                                    </div>
+                                    <div class="placeT">
+                                        <p>广州</p>
+                                        <p>2016.10.08</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-right carousel-div carousel-div-rock">
+                    <p class="pp1">专题推荐</p>
+                    <div class="carousel-right-left">
+                        <img src="images/aaa.png"/>
+                    </div>
+                    <div class="carousel-right-right">
+                        <p><a href="#">聚橙武汉站-2016首届中外民谣季</a></p>
+                        <div>了解详情</div>
+                    </div>
+
+                </div>
+      </div>
+     </div>
+
+        <div class="concert-more rock-more">
+                查看更多
+        </div>
+    </div>
+
+
+    <div class="main-musicale main-concert">
+        <div class="concert-container">
+            <div class="concert-title">
+                音乐会
+            </div>
+            <div class="concert-li">
+                <ul>
+                    <li><a href="#">天空之城</a><span>|</span></li>
+                    <li><a href="#">VIDEO</a><span>|</span></li>
+                    <li><a href="#">珀特戈</a><span>|</span></li>
+                    <li><a href="#">五岛龙</a><span>|</span></li>
+                    <li><a href="#">魏纳.佰奇</a><span>|</span></li>
+                    <li><a href="#">马克西姆</a><span>|</span></li>
+                    <li><a href="#">邓泰山</a></li>
+                </ul>
+            </div>
+            <div class="clear-float ">
+                <div class="pop-music">
+                    <div class="pop-container">
+                        <img src="images/musicale1.jpg" />
+                        <div class="pop-transparent musicale-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">湖南大剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.11.04 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+
+                    </div>
+                    <p class="musicale-p"><a href="#">克罗地亚狂想之旅 马克西姆2016中国巡回演奏会</a></p>
+                    <p><span>长沙&nbsp; |</span><strong class="musicale-strong">￥280</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/musicale2.jpg" />
+                        <div class="pop-transparent musicale-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">南山文体中心剧院 大剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.10.26 20:00</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+
+                    <p class="musicale-p"><a href="#">“从巴洛克到探戈” 2016深圳打击乐之夜</a></p>
+                    <p><span>深圳&nbsp; |</span><strong class="musicale-strong">￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  >
+                        <img src="images/musicale3.jpg"/>
+                        <div class="pop-transparent musicale-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">锦城艺术馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.20 19:30</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p class="musicale-p"><a href="#">2016 Video Games Live-暴雪游戏音乐会 成都站 </a></p>
+                    <p><span>成都&nbsp; |</span><strong class="musicale-strong">￥180</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/musicale4.jpg" />
+                        <div class="pop-transparent musicale-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">北京音乐厅</a></li>
+                                <li class="pop-time"><a href="#">2016.11.11 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="musicale-p"><a href="#">五岛龙2016“梁祝之旅”小提琴独奏会 北京站</a></p>
+                    <p><span>北京&nbsp; |</span><strong class="musicale-strong">￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/musicale5.jpg" />
+                        <div class="pop-transparent musicale-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">成都娇子音乐厅</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p class="musicale-p"><a href="#">【万有音乐系】 邓泰山钢琴独奏会 成都站</a></p>
+                    <p><span>成都&nbsp; |</span><strong class="musicale-strong">￥120</strong><span>起</span></p>
+                </div>
+            </div>
+            <div class="clear-float">
+
+
+            <div class="carousel-left carousel-div carousel-div-musicale">
+                <p class="pp1">一周排行</p>
+                <div class="carousel-left-left clear-float">
+                    <div class="carousel-left-div">
+                        <img src="images/bbb.png"/>
+                    </div>
+                    <div class="carousel-right-div">
+                        <p><a href="#">克罗地亚狂想之旅 马克西姆2016...</a></p>
+                        <p class="money"><span>￥280</span>起</p>
+                    </div>
+
+                </div>
+                <div class="carousel-left-right clear-float">
+                    <div class="carousel-left-div">
+                        <img src="images/ccc.png"/>
+                    </div>
+                    <div class="carousel-right-div">
+                        <p><a href="#">五岛龙 2016中国巡演“梁祝之旅”</a></p>
+                        <p class="money"><span>￥180</span>起</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-right carousel-div carousel-div-musicale">
+                <p class="pp1">演出资讯</p>
+                <div class="carousel-right-top clear-float">
+                    <div class="carousel-right-top-left">
+                        <img src="images/langlang.png"/>
+                    </div>
+                    <div class="carousel-right-top-right">
+                        <p class="pp2"><a href="#">朗朗新专辑私享会在北京举行 邀请10位巨星助阵</a></p>
+                        <p class="pp6">国际钢琴巨星、联合国和平大使朗朗在2016年9月26日发行首张跨界专辑《朗朗 纽约狂想曲》</p>
+                    </div>
+                </div>
+                <div class="carousel-right-bottom">
+                    <ul>
+                        <li><a href="#">年轻小提琴家查理.席姆9月10日来京开演</a></li>
+                        <li><a href="#">“打开艺术之门”京剧竖琴夏令营圆满结束</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           </div>
+            <div class="concert-more musicale-more">
+                查看更多
+            </div>
+        </div>
+    </div>
+
+    <div class="main-drama">
+        <div class="concert-container">
+            <div class="concert-title">
+                话剧 & 戏剧
+            </div>
+            <div class="concert-li">
+                <ul>
+                    <li><a href="#">武则天</a><span>|</span></li>
+                    <li><a href="#">朱鹮</a><span>|</span></li>
+                    <li><a href="#">牡丹亭</a><span>|</span></li>
+                    <li><a href="#">桃花镇</a><span>|</span></li>
+                    <li><a href="#">孟京辉</a><span>|</span></li>
+                    <li><a href="#">赖声川</a><span>|</span></li>
+                    <li><a href="#">开心麻花</a><span>|</span></li>
+                    <li><a href="#">金星</a><span>|</span></li>
+                    <li><a href="#">灰尘</a><span>|</span></li>
+                    <li><a href="#">狗魅</a></li>
+                </ul>
+            </div>
+            <div class="clear-float ">
+                <div class="pop-music">
+                    <div class="pop-container">
+                        <img src="images/drama1.jpg" />
+                        <div class="pop-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">南山文体中心大剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.10.18 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+
+                    </div>
+                    <p>刘晓庆史诗话剧《武则天》<a href="#"></a></p>
+                    <p><span>深圳&nbsp; |</span><strong>￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/drama2.jpg" />
+                        <div class="pop-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">湖北剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.10.04 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+
+                    <p><a href="#">上海歌舞团舞剧《朱鹮》</a></p>
+                    <p><span>武汉&nbsp; |</span><strong>￥100</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  >
+                        <img src="images/drama3.jpg"/>
+                        <div class="pop-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">佛山市岭南体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.20 19:30</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p><a href="#">原创悲喜剧《人生不适情》</a></p>
+                    <p><span>广州&nbsp; |</span><strong>￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/drama4.jpg" />
+                        <div class="pop-transparent " >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><a href="#">独创独幕话剧《桃花镇》</a></p>
+                    <p><span>上海&nbsp; |</span><strong >￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/drama5.jpg" />
+                        <div class="pop-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">龙岗大运中心体育馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p><a href="#">上海交大相声团《几投算》</a></p>
+                    <p><span>重庆&nbsp; |</span><strong>￥100</strong><span>起</span></p>
+                </div>
+            </div>
+            <div class="concert-more">
+                查看更多
+            </div>
+        </div>
+    </div>
+
+    <div class="main-child main-concert">
+        <div class="concert-container">
+            <div class="concert-title">
+                儿童剧
+            </div>
+            <div class="concert-li">
+                <ul>
+                    <li><a href="#">铠甲勇士</a><span>|</span></li>
+                    <li><a href="#">爱丽丝</a><span>|</span></li>
+                    <li><a href="#">小红帽</a><span>|</span></li>
+                    <li><a href="#">熊出没</a><span>|</span></li>
+                    <li><a href="#">甜甜旋风</a><span>|</span></li>
+                    <li><a href="#">恐龙工厂</a><span>|</span></li>
+                    <li><a href="#">小马快跑</a><span>|</span></li>
+                    <li><a href="#">雪岭熊风</a><span>|</span></li>
+                    <li><a href="#">泡泡公主</a><span>|</span></li>
+                    <li><a href="#">天使妈妈</a></li>
+                </ul>
+            </div>
+            <div class="clear-float ">
+                <div class="pop-music">
+                    <div class="pop-container">
+                        <img src="images/child1.jpg" />
+                        <div class="pop-transparent child-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">湖南大剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.11.04 19:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="child-p"><a href="#">熊出没之雪岭熊风</a></p>
+                    <p><span>长沙&nbsp; |</span><strong class="child-strong">￥80</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/child2.jpg" />
+                        <div class="pop-transparent child-transparent">
+                            <ul>
+                                <li class="pop-place"><a href="#">南山文体中心剧院 大剧院</a></li>
+                                <li class="pop-time"><a href="#">2016.10.26 20:00</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="child-p"><a href="#">热血战斗人偶剧《铠甲勇士》</a></p>
+                    <p><span>深圳&nbsp; |</span><strong class="child-strong">￥30</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/child3.jpg" />
+                        <div class="pop-transparent child-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">北京音乐厅</a></li>
+                                <li class="pop-time"><a href="#">2016.11.11 18:50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="child-p"><a href="#">经典童话人偶剧《小红帽》</a></p>
+                    <p><span>北京&nbsp; |</span><strong class="child-strong">￥50</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container" >
+                        <img src="images/child4%20(2).jpg" />
+                        <div class="pop-transparent child-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">成都娇子音乐厅</a></li>
+                                <li class="pop-time"><a href="#">2016.09.23 18:50</a></li>
+                            </ul>
+                        </div>
+                        <div class="host-icon"></div>
+                    </div>
+                    <p class="child-p"><a href="#">魔幻科学秀《外星人来了》</a></p>
+                    <p><span>成都&nbsp; |</span><strong class="child-strong">￥30</strong><span>起</span></p>
+                </div>
+                <div class="pop-music">
+                    <div class="pop-container"  >
+                        <img src="images/child5.jpg"/>
+                        <div class="pop-transparent child-transparent" >
+                            <ul>
+                                <li class="pop-place"><a href="#">锦城艺术馆</a></li>
+                                <li class="pop-time"><a href="#">2016.09.20 19:30</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <p class="child-p"><a href="#">《爱丽丝梦游泡泡仙境》 </a></p>
+                    <p><span>成都&nbsp; |</span><strong class="child-strong">￥40</strong><span>起</span></p>
+                </div>
+            </div>
+            <div class="clear-float">
+                <div class="child-left">
+                    <img src="images/ddd.png"/>
+                </div>
+                <div class="child-right">
+                    <img src="images/eee.png"/>
+                </div>
+            </div>
+            <div class="concert-more child-more">
+                查看更多
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-top clear-float">
+        <div class="footer-top-div top-div1">
+            <p class="p-title">帮助中心</p>
+            <p ><a href="#">新手指南</a><a href="#">支付方式</a><a href="#">售后服务</a></p>
+            <p><a href="#">购票指南</a><a href="#">配送方式</a></p>
+        </div>
+        <div class="footer-top-div top-div2">
+            <p class="p-title2">400-185-8666</p>
+            <p class="p-time">周一至周五：08:00-20:00</p>
+            <p class="p-time">周<span>一至周</span>末：08:00-18:30</p>
+        </div>
+        <div class="footer-top-div top-div3">
+            <div class="footer-er">
+                <img src="images/phone.png"/>
+                <p>手机客户端</p>
+            </div>
+            <div class="footer-er">
+                <img src="images/juooo.png"/>
+                <p>微信公众号</p>
+            </div>
+            <div class="footer-er">
+                <img src="images/fanka.png"/>
+                <p>饭咖APP</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom clear-float">
+        <div class="footer-bottom-left">
+            <ul>
+                <li><a href="#">关于聚橙</a><span>|</span></li><li>
+                <a href="#">联系我们</a><span>|</span></li><li>
+                <a href="#">加入我们</a><span>|</span></li><li>
+                <a href="#">加盟聚橙</a><span>|</span></li><li>
+                <a href="#">服务条款</a><span>|</span></li><li>
+                <a href="#">媒体报道</a><span>|</span></li><li>
+                <a href="#">合作伙伴</a><span>|</span></li><li>
+                <a href="#">友情链接</a></li>
+            </ul>
+            <p>Copyright 2007-2016 © 聚橙网 粤B2-20070272 | 粤ICP备09218027号</p>
+        </div>
+        <div class="footer-bottom-right">
+            <img src="images/footer-bottom.png"/>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
