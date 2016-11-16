@@ -1,0 +1,3 @@
+<view>
+    <text>计数:{{count}}</text>
+</view>
